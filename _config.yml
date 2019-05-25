@@ -6,15 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Yummy Theme # ex. I m Chuan
-name: Your Name # ex. DONGChuan
-email: my_email_address@lalala.com
-location: My location # ex. Nice, France
+title: Sykim Dev Blog # ex. I m Chuan
+name: sykim(ivy) # ex. DONGChuan
+email: sykim.ivy@gmail.com
+location: Korea # ex. Nice, France
 company: MyCompany
 company_url: my_company_website
-github_url: my_github_url # ex. https://github.com/DONGChuan
-github_username: # ex. DONGChuan
-description: description_of_your_web_site
+github_url: https://github.com/sykim-ivy # ex. https://github.com/DONGChuan
+github_username: sykim-ivy # ex. DONGChuan
+description: Sykim Dev Blog using GithubPages
 favicon: favicon.png # Image must be in assets/images
 repository: github_username/github_username.github.io # ex. DONGChuan/DONGChuan.github.io
 
