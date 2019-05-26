@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 menu: about
-subtitle:   <img src="/assets/images/{{ site.favicon }}" width="100px" height="100px"/>
+subtitle:   <img src="/assets/images/ga_icon.png" width="250px" height="250px" margin="10px" />
             <!-- <h3>Download My CV</h3>
             <a role="button" class="btn btn-primary hvr-grow-shadow" href="/assets/files/CV_Chuan_Dong_FR.pdf" target="_blanks">
                 <span class="flag-icon flag-icon-bl"></span> Français
