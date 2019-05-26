@@ -6,8 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Sykim Dev Blog # ex. I m Chuan
-name: sykim(ivy) # ex. DONGChuan
+title: Hello, I am So-yeon Kim! # ex. I m Chuan
+title_desc: This is where I record my study and coding.\nI'm not good at it, but I'd be glad if it would help you.
+name: Sykim Dev Blog # ex. DONGChuan
 email: sykim.ivy@gmail.com
 location: Korea # ex. Nice, France
 company: 
@@ -61,12 +62,14 @@ navs:
     label: Home
 
   -
-    href: /open-source
-    label: Open-Source
-
-  -
+  
     href: /blog
     label: Blog
+
+  -
+  
+    href: /open-source
+    label: Open-Source
 
   -
     href: /bookmark
