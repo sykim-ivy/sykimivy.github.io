@@ -25,19 +25,16 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 
 * `Java Code Example`
 <figure class="highlight"><pre>
-<code class="language-tex" data-lang="tex">   private val titleStr: String = "Hello World, I'm Title!"<strong><span style="color:red">;</span></strong></code>
+<code class="language-tex" data-lang="tex">
+private val titleStr: String = "Hello World, I'm Title!"<strong><span style="color:red;background-color: yellow;">;</span></strong></code>
 </pre></figure>  
 
-
-```
-   private String titleStr = "Hello World, I'm Title!";
-```
-
 * `Kotlin Code Example`
-{% highlight tex %}
-   private val titleStr: String = "Hello World, I'm Title!"<span style="color:red">;</
-{% endhighlight %}
-
+<figure class="highlight"><pre>
+<code class="language-tex" data-lang="tex">
+private val titleStr: String = "Hello World, I'm Title!"<strong><span style="color:red;background-color: yellow;">;</span></strong>
+</code>
+</pre></figure>  
 
 * Name of the animation. For example, changeColor.
 * Stages: From 0% to 100% to represent the whole process of animation
