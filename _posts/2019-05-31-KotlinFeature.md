@@ -25,7 +25,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 
 * `Java Code Example`
 ```
-   private String titleStr = "Hello World, I'm Title!"**;**
+   private String titleStr = "Hello World, I'm Title!"<span style="color:red">;</
 ```
 * `Kotlin Code Example`
 {% highlight tex %}
