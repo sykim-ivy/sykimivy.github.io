@@ -21,21 +21,13 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 코드작성시 특징
 
 ### 1. 코드 문장 끝에 ';'을 찍지 않는다
- : 자바에서 ';'를 붙이던 모든 문장에 세미콜론을 붙이지 않는다
-
 * `Java Code Example`
-<figure class="highlight"><pre>
-<code class="language-tex" data-lang="tex">
-private String titleStr = "Hello World, I'm Title!"<strong><span style="color:red;background-color: yellow;">;</span></strong>
-</code>
-</pre></figure>  
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex">
+private String titleStr = "Hello World, I'm Title!"<strong><span style="color:red;background-color: yellow;">;</span></strong></code></pre></figure>  
 
 * `Kotlin Code Example`
-<figure class="highlight"><pre>
-<code class="language-tex" data-lang="tex">
-private val titleStr: String = "Hello World, I'm Title!"
-</code>
-</pre></figure>  
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex">
+private val titleStr: String = "Hello World, I'm Title!"</code></pre></figure>  
 
 * Name of the animation. For example, changeColor.
 * Stages: From 0% to 100% to represent the whole process of animation
