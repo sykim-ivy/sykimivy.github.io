@@ -23,7 +23,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1. 코드 문장 끝에 ';'을 찍지 않는다
 * `Java Code Example`
 <figure class="highlight"><pre>
-<code class="language-tex" data-lang="tex">   private val titleStr: String = "Hello World, I'm Title!"<span style="color:red">;</span></code>
+<code class="language-tex" data-lang="tex">   private val titleStr: String = "Hello World, I'm Title!"<span style="color:red;background-color: yellow;">;</span></code>
 </pre></figure>
   
 * `Kotlin Code Example`
