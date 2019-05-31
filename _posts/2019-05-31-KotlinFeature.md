@@ -9,25 +9,24 @@ tags: [Kotlin]
 
 # 코틀린 주요 특징 (Kotlin Feature)
 
-기존 안드로이드 개발 공식 언어는 Java였으나, 
-Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되었다.
+기존 안드로이드 개발 공식 언어는 Java였으나,  
+Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되었다.  
 
-저 당시에는 내가 웹개발자여서 그냥 넘어갔었는데 안드로이드 개발을 하면서 생각해보니
-내가 살면서 공식 개발 언어가 바뀐 적은 처음이다!
+저 당시에는 내가 웹개발자여서 그냥 넘어갔었는데 안드로이드 개발을 하면서 생각해보니  
+내가 살면서 공식 개발 언어가 바뀐 적은 처음이다!  
 
-그래서 신기하기도 하고 또 약간의 배움의 부담도 느껴지고 그런데 또 궁금하기도 하고하니
-시작하자 코틀린!!
+그래서 신기하기도 하고 또 약간의 배움의 부담도 느껴지고 그런데 또 궁금하기도 하고하니  
+시작하자 코틀린!!  
 
 ## 코드작성시 특징
 
 ### 1. 코드 문장 끝에 ';'을 찍지 않는다
  : 자바에서 ';'를 붙이던 모든 문장에 세미콜론을 붙이지 않는다
 
-* `Java Code **Example**`
-{% highlight tex %}
-   private String titleStr = "Hello World, I'm Title!";
-{% endhighlight %}
-
+* `Java Code Example`
+```
+   private String titleStr = "Hello World, I'm Title!"**;**
+```
 * `Kotlin Code Example`
 {% highlight tex %}
    private val titleStr: String = "Hello World, I'm Title!"
