@@ -23,7 +23,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1. 코드 문장 끝에 ';'을 찍지 않는다
 * `Java` Code Example
 <figure class="highlight"><pre>
-<code class="language-tex" data-lang="tex">   private val titleStr: String = "Hello World, I'm Title!"<span style="color:red;background-color: yellow;">;</span></code>
+<code class="language-tex" data-lang="tex">  private val titleStr: String = "Hello World, I'm Title!"<span style="color:red;background-color: yellow;">;</span></code>
 </pre></figure>
   
 * `Kotlin` Code Example
@@ -34,11 +34,20 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 변수 선언시 특징
 ### 1. 맨앞에 타입 가변성을 명시한다
 
-#### 값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
-#### 값이 변할 수 있는 변수일 경우 <strong>`var`</strong>  
+#### &nbsp;&nbsp;&nbsp;-  값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
+#### &nbsp;&nbsp;&nbsp;-  값이 변할 수 있는 변수일 경우 <strong>`var`</strong>  
 
-`val`은 value, `var`는 variable의 약자로 추정된다.  
-<p style="font-size: 13px;color: gray;">('var'는 javascript 같아서 반갑네 ㅎㅎ)</p>  
+`val`은 value, `var`는 variable의 약자로 추정된다.<p style="font-size: 13px;color: gray;">('var'는 javascript 같아서 반갑네 ㅎㅎ)</p>  
+
+* `Kotlin` Code Example
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
+  
+### 2. 변수타입은 '변수명: 변수타입'으로 적거나 생략도 가능하다
+  
+* `Kotlin` Code Example
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr</span> <span class="s">: String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
+  
+
 
 * Name of the animation. For example, changeColor.
 * Stages: From 0% to 100% to represent the whole process of animation
