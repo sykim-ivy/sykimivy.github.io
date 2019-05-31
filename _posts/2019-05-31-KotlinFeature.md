@@ -26,13 +26,14 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Java Code Example`
 <figure class="highlight"><pre>
 <code class="language-tex" data-lang="tex">
-private val titleStr: String = "Hello World, I'm Title!"<strong><span style="color:red;background-color: yellow;">;</span></strong></code>
+private String titleStr = "Hello World, I'm Title!"<strong><span style="color:red;background-color: yellow;">;</span></strong>
+</code>
 </pre></figure>  
 
 * `Kotlin Code Example`
 <figure class="highlight"><pre>
 <code class="language-tex" data-lang="tex">
-private val titleStr: String = "Hello World, I'm Title!"<strong><span style="color:red;background-color: yellow;">;</span></strong>
+private val titleStr: String = "Hello World, I'm Title!"
 </code>
 </pre></figure>  
 
