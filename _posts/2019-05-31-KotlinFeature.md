@@ -30,13 +30,15 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="n">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
   
   
+  
 ## 변수 선언시 특징
 ### 1. 맨앞에 타입 가변성을 명시한다
 
-#### 값이 변하지 않는 변수일 경우 <strong>`'val'`</strong>  
-#### 값이 변할 수 있는 변수일 경우 <strong>`'var'`</strong>  
+#### 값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
+#### 값이 변할 수 있는 변수일 경우 <strong>`var`</strong>  
 
-`'val'`은 value, `'var'`는 variable의 약자로 추정된다. ('var'는 javascript 같아서 반갑네 ㅎㅎ)  
+`val`은 value, `var`는 variable의 약자로 추정된다.  
+<p style="font-size: 13px;color: gray;">('var'는 javascript 같아서 반갑네 ㅎㅎ)</p>  
 
 * Name of the animation. For example, changeColor.
 * Stages: From 0% to 100% to represent the whole process of animation
