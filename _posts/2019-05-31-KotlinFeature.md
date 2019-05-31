@@ -28,6 +28,10 @@ private String titleStr = "Hello World, I'm Title!"<strong><span style="color:re
 * `Kotlin Code Example`
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex">
 private val titleStr: String = "Hello World, I'm Title!"</code></pre></figure>  
+  
+{% highlight java %}
+private String titleStr = "Hello World, I'm Title!";
+{% endhighlight %}
 
 * Name of the animation. For example, changeColor.
 * Stages: From 0% to 100% to represent the whole process of animation
