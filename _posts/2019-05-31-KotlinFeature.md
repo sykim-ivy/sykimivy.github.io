@@ -28,10 +28,9 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
   
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="n">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
-  
-  
-  
-  
+ &nbsp;
+  &nbsp;
+   &nbsp;
 ## 변수 선언시 특징
 ### 1. 맨앞에 타입 가변성을 명시한다
 
