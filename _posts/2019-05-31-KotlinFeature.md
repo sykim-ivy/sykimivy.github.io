@@ -87,12 +87,10 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
    <span class="n">dessertBasket</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="s">"Oreo Mint flavor!"     <span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference'</span></span>
    <span class="n">dessertBasket</span><span class="o">.</span><span class="na">removeAt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>           <span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference: removeAt'</span></code></pre></figure>
 
-&nbsp; 
+<br/>
 &nbsp;-Kotlin은 기존 Java 컬렉션 클래스들을 타입 별칭(type alias)로 사용한다.
-&nbsp; 
+<br/>
 &nbsp;- 관련된 별도의 포스팅 첨부 예정
- &nbsp;
- &nbsp;
 <br/><br/><br/>
 
 ## 변수 선언시 
