@@ -58,10 +58,8 @@ tags: [Kotlin]
 ## 기타 외 특징들
 ### 1. 람다 표현식(Lamda)을 지원한다
 ### 2. 스트림 API(Stream API)를 지원한다
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
+
+<br/><br/><br/><br/>
 
 ## Refs
 
