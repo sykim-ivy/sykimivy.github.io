@@ -81,13 +81,11 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ##### &nbsp;&nbsp;&nbsp;-  자료값이 변하지 않는 경우 <strong>`Immutable 타입`</strong>  
 &nbsp;- 자료값의 읽기만 (= Read only) 가능! 변경 불가능!!
 * `Kotlin` Code Example
-{% highlight java %}
-   val dessertBasket: List<String> = listOf("Nougat", "Oreo", "Pie")
-   dessertBasket.add("Quesito")
-   dessertBasket[2] // same this code >> 'dessertBasket.get(2)'
-   dessertBasket[2] = "Oreo Mint flavor!"
-   dessertBasket.removeAt(0) // delete element at index 0, value("Nougat")
-{% endhighlight %} 
+<figure class="highlight"><pre><code class="language-java" data-lang="java">   <span class="n">val</span> <span class="nl">dessertBasket:</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">listOf</span><span class="o">(</span><span class="s">"Nougat"</span><span class="o">,</span> <span class="s">"Oreo"</span><span class="o">,</span> <span class="s">"Pie"</span><span class="o">)</span>
+   <span class="n">dessertBasket</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Quesito"</span><span class="o">)     <span style="color:red;background-color: yellow;">Error : 빨간줄 발생 'unresolved reference'</span></span>
+<span class="n">dessertBasket</span><span class="o">[</span><span class="mi">2</span><span class="o">]     <span style="color:red;background-color: yellow;">Error : 빨간줄 발생 'unresolved reference'</span></span></span>
+   <span class="n">dessertBasket</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="s">"Oreo Mint flavor!"     <span style="color:red;background-color: yellow;">Error : 빨간줄 발생 'unresolved reference'</span></span></span>
+   <span class="n">dessertBasket</span><span class="o">.</span><span class="na">removeAt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>     <span style="color:red;background-color: yellow;">Error : 빨간줄 발생 'unresolved reference'</span></span></code></pre></figure>
 
 &nbsp; 
 &nbsp;-Kotlin은 기존 Java 컬렉션 클래스들을 타입 별칭(type alias)로 사용한다.
