@@ -63,6 +63,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp;※ 변수선언시 타입을 생략하는 경우, null을 허용하지 않는 타입으로 지정된다
  &nbsp; 
  &nbsp;   
+<br/><br/>
 
 ### 2.컬렉션 타입은 '컬렉션 내 자료 가변 여부'에 따라 나뉜다
 
@@ -82,11 +83,10 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 {% highlight java %}
    val dessertBasket: List<String> = listOf("Nougat", "Oreo", "Pie")
-   dessertBasket[2]
    dessertBasket.add("Quesito")
-   dessertBasket.removeAt(0)
-   dessertBasket.set(2, "Oreo Mint flavor!")
+   dessertBasket[2] // same this code >> 'dessertBasket.get(2)'
    dessertBasket[2] = "Oreo Mint flavor!"
+   dessertBasket.removeAt(0) // delete element at index 0, value("Nougat")
 {% endhighlight %} 
 
 &nbsp; 
@@ -95,7 +95,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp;- 관련된 별도의 포스팅 첨부 예정
  &nbsp;
  &nbsp;
- &nbsp; 
+<br/><br/><br/>
 
 ## 변수 선언시 
 ### 1. 맨앞에 타입 가변성을 명시한다
