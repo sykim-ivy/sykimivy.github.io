@@ -69,16 +69,25 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ##### &nbsp;&nbsp;&nbsp;-  자료값이 변하는 경우 <strong>`Mutable 타입`</strong>  
 &nbsp;- 자료값의 추가/읽기/변경/삭제 (=CRUD) 모두 가능!
 * `Kotlin` Code Example
-<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">var</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
-<br/>   titleStr = "Try change the value"</span>     <span style="color:blue;background-color: yellow;">Not Error : 'var'변수는 언제든 값 변경 가능</span>
-</code></pre></figure>  
+{% highlight java %}
+            var dessertBasket: MutableList<String> = mutableListOf("Nougat", "Oreo", "Pie")
+            dessertBasket.add("Quesito") // [추가]
+            dessertBasket[2] // [읽기] : Same this code >> 'dessertBasket.get(2)'
+            dessertBasket[2] = "Oreo Mint flavor!" // [변경] : Same this code >> 'dessertBasket.set(2, "Oreo Mint flavor!")'
+            dessertBasket.removeAt(0) // [삭제] Delete element at index 0, value("Nougat")
+{% endhighlight %} 
 
 ##### &nbsp;&nbsp;&nbsp;-  자료값이 변하지 않는 경우 <strong>`Immutable 타입`</strong>  
-&nbsp;- 자료값의 읽기만 가능! 변경 불가능!!
+&nbsp;- 자료값의 읽기만 (= Read only) 가능! 변경 불가능!!
 * `Kotlin` Code Example
-<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
-<br/>   titleStr = "Try change the value"</span>     <span style="color:red;background-color: yellow;">Error : 빨간줄 발생 'Val cannot be reassigned'</span>
-</code></pre></figure>  
+{% highlight java %}
+            val dessertBasket: List<String> = listOf("Nougat", "Oreo", "Pie")
+            dessertBasket[2]
+            dessertBasket.add("Quesito")
+            dessertBasket.removeAt(0)
+            dessertBasket.set(2, "Oreo Mint flavor!")
+            dessertBasket[2] = "Oreo Mint flavor!"
+{% endhighlight %} 
 
 &nbsp; 
 &nbsp;-Kotlin은 기존 Java 컬렉션 클래스들을 타입 별칭(type alias)로 사용한다.
