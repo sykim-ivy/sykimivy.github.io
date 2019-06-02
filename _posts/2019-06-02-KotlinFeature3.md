@@ -49,7 +49,7 @@ tags: [Kotlin]
 &nbsp; 
 &nbsp; 
 &nbsp; 
-&nbsp; 
+<br/><br/><br/>
 
 ## Kotlin 반복문
 ### for문을 지원하지 않고, for each문, while문을 지원한다
