@@ -124,13 +124,15 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 메소드(함수,function) 선언시 
 ### 1. 함수 선언시 아래 순서를 따른다.
 
-`fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 함수 실행문 }`
+<p style="font-size: 23px;font-weight: bold;">
+ `fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 
+                ~ 함수 실행문 ~ 
+  }`
+ </p>
 
 &nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
 <br/>
 &nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
-
-<br/>
 
 ### 2. override 함수는 선언시 맨 앞에 `override`키워드로 명시한다
 <br/>
@@ -174,8 +176,8 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp; 
 &nbsp; 
 &nbsp; 
-## 객체 생성시 
-### 객
+## Kotlin 조건문
+### switch문이 없고, when문을 사용한다.
 
 &nbsp; 
 &nbsp; 
