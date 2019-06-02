@@ -44,6 +44,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 | privated | 선언된 클래스 내에서만 접근 가능 |
 &nbsp; 
 &nbsp; 
+&nbsp; 
 ### 2. 맨앞에 타입 가변성을 명시한다
 
 ##### &nbsp;&nbsp;&nbsp;-  값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
