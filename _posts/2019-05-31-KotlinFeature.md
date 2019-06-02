@@ -36,7 +36,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 접근제한자 선언시
 ### 접근제한자 생략시 'public'으로 설정된다
   
-&nbsp;- 여긴 함수 선언시도 동일하다!
+&nbsp;※ 명시하지 않는 경우 디폴트 접근제한자 `public`으로 지정되니 주의!!
   
 | 접근제한자 | 접근 가능 범위 |
 |:---:|----|
@@ -53,11 +53,11 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 모든 타입은 Nullable 여부를 명시해야 한다
 &nbsp;- 코틀린(kotlin)은 null값 허용 여부 검사를 컴파일 단게에서 수행한다.
 
-##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입(Non-Null) :  <strong>`타입명`</strong>  
+##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입 (Non-Null) :  <strong>`타입명`</strong>  
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
 
-##### &nbsp;&nbsp;&nbsp;-  Null값 허용 타입(Nullable) : <strong>`타입명?`</strong>  
+##### &nbsp;&nbsp;&nbsp;-  Null값 허용 타입 (Nullable) : <strong>`타입명?`</strong>  
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span><span style="color:red;background-color: yellow;">?</span><span class="o">=</span> <span class="">null</span></code></pre></figure>
 &nbsp;※ 변수선언시 타입을 생략하는 경우, null을 허용하지 않는 타입으로 지정된다
@@ -75,8 +75,13 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 
 <p>&nbsp;-<code class="highlighter-rouge">val</code>은 value, <code class="highlighter-rouge">var</code>는 variable의 약자로 추정된다.&nbsp;<span style="font-size: 12px;color: gray;"> (‘var’는 javascript 같아서 반갑네 ㅎㅎ)</span></p>
 * `Kotlin` Code Example
-<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span>
-<br/>   titleStr = "Try change the value"              <span style="color:red;background-color: yellow;">빨간줄 발생 'Val cannot be reassigned'</span>
+<!--val 예시-->
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
+<br/>   titleStr = "Try change the value"</span>     <span style="color:red;background-color: yellow;">빨간줄 발생 : 'Val cannot be reassigned'</span>
+</code></pre></figure>  
+<!--var 예시-->
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">var</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
+<br/>   titleStr = "Try change the value"</span>     <span style="color:blue;background-color: yellow;">'var'변수는 언제든 값 변경 가능</span>
 </code></pre></figure>  
 &nbsp; 
 &nbsp; 
