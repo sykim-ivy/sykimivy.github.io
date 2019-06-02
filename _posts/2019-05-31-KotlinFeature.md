@@ -51,7 +51,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 
 ## 타입 선언시
 ### 모든 타입은 Nullable 여부를 명시해야 한다
-&nbsp;- 코틀린(kotlin)은 null값 허용여부를 컴파일 단게에서 수행한다.
+&nbsp;- 코틀린(kotlin)은 null값 허용 여부 검사를 컴파일 단게에서 수행한다.
 
 ##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입(Non-Null) :  <strong>`타입명`</strong>  
 * `Kotlin` Code Example
@@ -71,11 +71,13 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1. 맨앞에 타입 가변성을 명시한다
 
 ##### &nbsp;&nbsp;&nbsp;-  값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
-##### &nbsp;&nbsp;&nbsp;-  값이 변할 수 있는 변수일 경우 <strong>`var`</strong><span style="font-size: 12px;color: gray;">  (<< Java의 'final' 키워드 같은)</span>  
+##### &nbsp;&nbsp;&nbsp;-  값이 변할 수 있는 변수일 경우 <strong>`var`</strong><span style="font-size: 13px;color: gray;">  (<< Java의 'final' 키워드 같은)</span>  
 
 <p>&nbsp;-<code class="highlighter-rouge">val</code>은 value, <code class="highlighter-rouge">var</code>는 variable의 약자로 추정된다.&nbsp;<span style="font-size: 12px;color: gray;"> (‘var’는 javascript 같아서 반갑네 ㅎㅎ)</span></p>
 * `Kotlin` Code Example
-<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span>
+<br/>   titleStr = "Try change the value"              <span style="color:red;background-color: yellow;">빨간줄 발생 'Val cannot be reassigned'</span>
+</code></pre></figure>  
 &nbsp; 
 &nbsp; 
 
