@@ -92,7 +92,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 메소드(함수,function) 선언시 
 ### fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 함수 실행문 }
 &nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
-&nbsp;&nbsp;cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.
+&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
  &nbsp;
 * `Kotlin` Code Example
 {% highlight java %} 
