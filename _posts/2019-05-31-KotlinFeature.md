@@ -34,12 +34,15 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 변수 선언시 특징
 ### 1. 접근제한자 생략시 'public'으로 설정된다
   
+ - 여긴 함수 선언시도 동일하다!
+  
 | 접근제한자 | 접근 가능 범위 |
 |:---:|----|
 | **public** | 어디서든 접근 가능 (<span style="color:red;"><strong>디폴트</strong></span>) |
-| **internal** | <u>동일 모듈</u> 내에서 접근 가능 |
+| **internal** | <strong><u>동일 모듈</u></strong> 내에서 접근 가능 |
 | protected | 선언된 클래스를 상속받은 클래스에서 접근 가능 |
 | privated | 선언된 클래스 내에서만 접근 가능 |
+  
   
 ### 2. 맨앞에 타입 가변성을 명시한다
 
@@ -53,14 +56,16 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
   
-  
+&nbsp; 
 ### 3. 변수타입은 '변수명: 변수타입'으로 적거나 생략도 가능하다
   
-변수타입 생략시 변수에 대입되는 값을 바탕으로 타입을 추론한다.
+ - 변수타입 생략시 변수에 대입되는 값을 바탕으로 타입을 추론한다.
   
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr</span> <span class="s">: String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
-  
+&nbsp; 
+&nbsp; 
+&nbsp; 
 
 
 * Name of the animation. For example, changeColor.
