@@ -124,21 +124,17 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 메소드(함수,function) 선언시 
 ### 1. 함수 선언시 아래 순서를 따른다.
 
-<p style="font-size: 23px;font-weight: bold;">
-{% highlight java %}
- fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 
-                ~ 함수 실행문 ~ 
-  }
-{% endhighlight %}
-</p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java" style="
+    font-size: 22px;
+"> <span class="nd">fun</span> <span class="nf">함수명</span><span class="o">(</span><span class="s">파라미터명</span><span class="o">:</span> <span class="s">파라미터타입</span><span class="o">,</span> <span class="o">...):</span> <span class="kt">리턴타입</span> <span class="o">{</span> 
+                <span class="">~</span> <span class="">함수</span> <span class="">실행문</span> <span class="">~</span> 
+  <span class="o">}</span></code></pre></figure>
 
 &nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
 <br/>
 &nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
-
-### 2. override 함수는 선언시 맨 앞에 `override`키워드로 명시한다
 <br/>
- &nbsp;
+### 2. override 함수는 선언시 맨 앞에 `override`키워드로 명시한다
 * `Kotlin` Code Example
 {% highlight java %}
     override fun onCreate(savedInstanceState: Bundle?) {
