@@ -53,8 +53,6 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1.모든 타입은 Nullable 여부를 명시해야 한다
 &nbsp;- 코틀린(kotlin)은 null값 허용 여부 검사를 컴파일 단게에서 수행한다.
 
-<br/>
-
 ##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입 (Non-Null) :  <strong>`타입명`</strong>  
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
@@ -70,7 +68,11 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 <br/><br/>
 
 ### 2.컬렉션 타입은 '컬렉션 내 자료 가변 여부'에 따라 나뉜다
+&nbsp;- Kotlin은 기존 Java 컬렉션 클래스들을 타입 별칭(type alias)로 사용한다.
 <br/>
+&nbsp;+ 관련된 별도의 포스팅 첨부 예정
+<br/><br/>
+
 ##### &nbsp;&nbsp;&nbsp;-  자료값이 변하는 경우 <strong>`Mutable 타입`</strong>  
 &nbsp;- 자료값의 추가/읽기/변경/삭제 (=CRUD) 모두 가능!
 * `Kotlin` Code Example
@@ -93,15 +95,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
    <span class="n">dessertBasket</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="s">"Oreo Mint flavor!"     <span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference'</span></span>
    <span class="n">dessertBasket</span><span class="o">.</span><span class="na">removeAt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference'</span></code></pre></figure>
 
-&nbsp;- Kotlin은 기존 Java 컬렉션 클래스들을 타입 별칭(type alias)로 사용한다.
-<br/><br/>
-&nbsp;- 관련된 별도의 포스팅 첨부 예정
 <br/><br/><br/>
-
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
 
 
 ## Refs
