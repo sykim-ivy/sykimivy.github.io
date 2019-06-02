@@ -24,7 +24,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1. 코드 문장 끝에 ';'을 찍지 않는다
 * `Java` Code Example
 <figure class="highlight"><pre>
-<code class="language-tex" data-lang="tex">  private val titleStr: String = "Hello World, I'm Title!"<span style="color:red;background-color: yellow;">;</span></code>
+<code class="language-tex" data-lang="tex">  private String titleStr = "Hello World, I'm Title!"<span style="color:red;background-color: yellow;">;</span></code>
 </pre></figure>
   
 * `Kotlin` Code Example
@@ -92,10 +92,11 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 메소드(함수,function) 선언시 
 ### fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 함수 실행문 }
 &nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
-&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
+&nbsp; 
+&nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
  &nbsp;
 * `Kotlin` Code Example
-{% highlight javascript %}override fun onCreate(savedInstanceState: Bundle?) {
+{% highlight java %}override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_layout)
     }
@@ -107,6 +108,22 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
         setContentView(R.layout.main_activity_layout)
     }
 {% endhighlight %}
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+
+## 객체 생성시 
+### 객체 생성시 'new'를 쓰지 않는다
+* `Java` Code Example
+<figure class="highlight"><pre>
+<code class="language-tex" data-lang="tex">  private Object tempObj = <span style="color:red;background-color: yellow;">new</span> Object();</code>
+</pre></figure>
+  
+* `Kotlin` Code Example
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="n">val</span> <span class="">tempObj <span class="o">=</span> <span class="">Any()</span></code></pre></figure>
+   
+{% highlight java %}private val tempObj = Any(){% endhighlight %}
 &nbsp; 
 &nbsp; 
 &nbsp; 
