@@ -21,7 +21,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
  &nbsp;
  &nbsp;
 ## 코드 작성시 
-### 1. 코드 문장 끝에 ';'을 찍지 않는다
+### 문장 끝에 ';'을 찍지 않는다
 * `Java` Code Example
 <figure class="highlight"><pre>
 <code class="language-tex" data-lang="tex">  private String titleStr = "Hello World, I'm Title!"<span style="color:red;background-color: yellow;">;</span></code>
@@ -50,7 +50,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
  &nbsp;
 
 ## 타입 선언시
-### 모든 타입은 Nullable 여부를 명시해야 한다
+### 1.모든 타입은 Nullable 여부를 명시해야 한다
 &nbsp;- 코틀린(kotlin)은 null값 허용 여부 검사를 컴파일 단게에서 수행한다.
 
 ##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입 (Non-Null) :  <strong>`타입명`</strong>  
@@ -61,8 +61,29 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span><span style="color:red;background-color: yellow;">?</span><span class="o">=</span> <span class="">null</span></code></pre></figure>
 &nbsp;※ 변수선언시 타입을 생략하는 경우, null을 허용하지 않는 타입으로 지정된다
-  
-  
+&nbsp; 
+&nbsp;   
+
+### 2.컬렉션 타입은 '컬렉션 내 자료 가변 여부'에 따라 나뉜다
+
+##### &nbsp;&nbsp;&nbsp;-  자료값이 변하는 경우 <strong>`Mutable 타입`</strong>  
+&nbsp;- 자료값의 추가/읽기/변경/삭제 (=CRUD) 모두 가능!
+* `Kotlin` Code Example
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">var</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
+<br/>   titleStr = "Try change the value"</span>     <span style="color:blue;background-color: yellow;">Not Error : 'var'변수는 언제든 값 변경 가능</span>
+</code></pre></figure>  
+
+##### &nbsp;&nbsp;&nbsp;-  자료값이 변하지 않는 경우 <strong>`Immutable 타입`</strong>  
+&nbsp;- 자료값의 읽기만 가능! 변경 불가능!!
+* `Kotlin` Code Example
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
+<br/>   titleStr = "Try change the value"</span>     <span style="color:red;background-color: yellow;">Error : 빨간줄 발생 'Val cannot be reassigned'</span>
+</code></pre></figure>  
+
+&nbsp; 
+&nbsp;-Kotlin은 기존 Java 컬렉션 클래스들을 타입 별칭(type alias)로 사용한다.
+&nbsp; 
+&nbsp;- 관련된 별도의 포스팅 첨부 예정
  &nbsp;
  &nbsp;
  &nbsp; 
@@ -77,7 +98,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 <!--val 예시-->
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
-<br/>   titleStr = "Try change the value"</span>     <span style="color:red;background-color: yellow;">Error 빨간줄 발생 : 'Val cannot be reassigned'</span>
+<br/>   titleStr = "Try change the value"</span>     <span style="color:red;background-color: yellow;">Error : 빨간줄 발생 'Val cannot be reassigned'</span>
 </code></pre></figure>  
 <!--var 예시-->
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">var</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
@@ -141,6 +162,22 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp; 
 &nbsp; 
 &nbsp; 
+## 객체 생성시 
+### 객
+
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+## 기타 외 특징들
+### 람다 Lamda 표현식을 지원한다
+### 스트림 API를 지원한다
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp;- Kotlin의 최상위 객체는 'Any'클래스이다.
+
 
 ## Refs
 
