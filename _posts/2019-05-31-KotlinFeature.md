@@ -95,15 +95,13 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
  &nbsp;
 * `Kotlin` Code Example
-{% highlight java %} 
-    override fun onCreate(savedInstanceState: Bundle?) {
+{% highlight javascript %}override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_layout)
     }
 {% endhighlight %}
 * `Java` Code Example
-{% highlight java %} 
-    @Override
+{% highlight java %}@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity_layout)
