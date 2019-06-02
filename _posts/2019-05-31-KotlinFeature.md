@@ -48,16 +48,18 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
  &nbsp;
 
 ## 타입 선언시
-### 접근제한자 생략시 'public'으로 설정된다
+### 모든 타입은 Nullable 여부를 명시해야 한다
+&nbsp;- 코틀린(kotlin)은 null값 허용여부를 컴파일 단게에서 수행한다.
+
+##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입 :  <strong>`타입명`</strong>  
+* `Kotlin` Code Example
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String?</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
+
+##### &nbsp;&nbsp;&nbsp;-  Null값 허용 타입 : <strong>`타입명<span style="background-color: yellow;">?</span>`</strong>  
+* `Kotlin` Code Example
+<figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
+&nbsp;※ 변수선언시 타입을 생략하는 경우, null을 허용하지 않는 타입으로 지정된다
   
-&nbsp;- 여긴 함수 선언시도 동일하다!
-  
-| 접근제한자 | 접근 가능 범위 |
-|:---:|----|
-| **public** | 어디서든 접근 가능 (<span style="color:red;"><strong>디폴트</strong></span>) |
-| **internal** | <strong><u>동일 모듈</u></strong> 내에서 접근 가능 |
-| protected | 선언된 클래스를 상속받은 클래스에서 접근 가능 |
-| privated | 선언된 클래스 내에서만 접근 가능 |
   
  &nbsp;
  &nbsp;
