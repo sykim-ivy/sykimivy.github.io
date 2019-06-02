@@ -17,7 +17,6 @@ tags: [Kotlin]
 ## 변수 선언시 
 ### 1. 맨앞에 타입 가변성을 명시한다
 <p>&nbsp;-<code class="highlighter-rouge">val</code>은 value, <code class="highlighter-rouge">var</code>는 variable의 약자로 추정된다.&nbsp;<span style="font-size: 12px;color: gray;"> (‘var’는 javascript 같아서 반갑네 ㅎㅎ)</span></p>
-<br/>  
 
 ##### &nbsp;&nbsp;&nbsp;-  값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
 * `Kotlin` Code Example
@@ -40,7 +39,7 @@ tags: [Kotlin]
 ### 2. 변수타입은 '변수명: 변수타입'으로 적거나 생략도 가능하다
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr</span> <span class="s">: String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
-<br/>  
+
 &nbsp;- 변수타입 생략시 변수에 대입되는 값을 바탕으로 타입을 추론한다. <span style="font-size: 12px;color: gray;">(이때 타입은 non-null타입임을 명심하자!)</span>
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
 &nbsp; 
@@ -52,10 +51,10 @@ tags: [Kotlin]
 ### 1. 함수 선언시 아래 순서를 따른다.
 
 <figure class="highlight"><pre><code class="language-java" data-lang="java" style="
-    font-size: 22px;
+    font-size: 20px;
 "> <span class="nd">fun</span> <span class="nf">함수명</span><span class="o">(</span><span class="s">파라미터명</span><span class="o">:</span> <span class="s">파라미터타입</span><span class="o">,</span> <span class="o">...):</span> <span class="kt">리턴타입</span> <span class="o">{</span> 
                 <span class="">~</span> <span class="">함수</span> <span class="">실행문</span> <span class="">~</span> 
-  <span class="o">}</span></code></pre></figure>
+ <span class="o">}</span></code></pre></figure>
 
 &nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
 <br/>
