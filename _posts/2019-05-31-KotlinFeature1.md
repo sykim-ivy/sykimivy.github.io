@@ -53,9 +53,13 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1.모든 타입은 Nullable 여부를 명시해야 한다
 &nbsp;- 코틀린(kotlin)은 null값 허용 여부 검사를 컴파일 단게에서 수행한다.
 
+<br/>
+
 ##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입 (Non-Null) :  <strong>`타입명`</strong>  
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
+
+<br/>
 
 ##### &nbsp;&nbsp;&nbsp;-  Null값 허용 타입 (Nullable) : <strong>`타입명?`</strong>  
 * `Kotlin` Code Example
@@ -66,7 +70,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 <br/><br/>
 
 ### 2.컬렉션 타입은 '컬렉션 내 자료 가변 여부'에 따라 나뉜다
-
+<br/>
 ##### &nbsp;&nbsp;&nbsp;-  자료값이 변하는 경우 <strong>`Mutable 타입`</strong>  
 &nbsp;- 자료값의 추가/읽기/변경/삭제 (=CRUD) 모두 가능!
 * `Kotlin` Code Example
@@ -77,6 +81,8 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
    dessertBasket[2] = "Oreo Mint flavor!" // [변경] : Same this code >> 'dessertBasket.set(2, "Oreo Mint flavor!")'
    dessertBasket.removeAt(0) // [삭제] Delete element at index 0, value("Nougat")
 {% endhighlight %} 
+
+<br/>
 
 ##### &nbsp;&nbsp;&nbsp;-  자료값이 변하지 않는 경우 <strong>`Immutable 타입`</strong>  
 &nbsp;- 자료값의 읽기만 (= Read only) 가능! 변경 불가능!!
