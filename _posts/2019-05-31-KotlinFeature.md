@@ -77,11 +77,11 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 <!--val 예시-->
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
-<br/>   titleStr = "Try change the value"</span>     <span style="color:red;background-color: yellow;">빨간줄 발생 : 'Val cannot be reassigned'</span>
+<br/>   titleStr = "Try change the value"</span>     <span style="color:red;background-color: yellow;">Error 빨간줄 발생 : 'Val cannot be reassigned'</span>
 </code></pre></figure>  
 <!--var 예시-->
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">var</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
-<br/>   titleStr = "Try change the value"</span>     <span style="color:blue;background-color: yellow;">'var'변수는 언제든 값 변경 가능</span>
+<br/>   titleStr = "Try change the value"</span>     <span style="color:blue;background-color: yellow;">Not Error : 'var'변수는 언제든 값 변경 가능</span>
 </code></pre></figure>  
 &nbsp; 
 &nbsp; 
@@ -100,7 +100,6 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 함수 실행문 }
 &nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
 
-&nbsp; 
 &nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
  &nbsp;
 * `Kotlin` Code Example
@@ -125,7 +124,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ## 객체 생성시 
 ### 객체 생성시 'new'를 쓰지 않는다
 &nbsp;- Kotlin의 최상위 객체는 'Any'클래스이다.
-&nbsp; 
+
 &nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우 'Object'클래스이다.</span>
 * `Java` Code Example
 <figure class="highlight"><pre>
