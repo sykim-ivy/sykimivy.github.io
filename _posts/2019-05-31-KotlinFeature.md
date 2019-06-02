@@ -61,8 +61,8 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span><span style="color:red;background-color: yellow;">?</span><span class="o">=</span> <span class="">null</span></code></pre></figure>
 &nbsp;※ 변수선언시 타입을 생략하는 경우, null을 허용하지 않는 타입으로 지정된다
-&nbsp; 
-&nbsp;   
+ &nbsp; 
+ &nbsp;   
 
 ### 2.컬렉션 타입은 '컬렉션 내 자료 가변 여부'에 따라 나뉜다
 
@@ -113,8 +113,8 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">var</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"
 <br/>   titleStr = "Try change the value"</span>     <span style="color:blue;background-color: yellow;">Not Error : 'var'변수는 언제든 값 변경 가능</span>
 </code></pre></figure>  
-&nbsp; 
-&nbsp; 
+ &nbsp;
+ &nbsp;
 
 ### 2. 변수타입은 '변수명: 변수타입'으로 적거나 생략도 가능하다
 * `Kotlin` Code Example
