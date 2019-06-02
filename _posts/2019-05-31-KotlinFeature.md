@@ -71,9 +71,9 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1. 맨앞에 타입 가변성을 명시한다
 
 ##### &nbsp;&nbsp;&nbsp;-  값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
-##### &nbsp;&nbsp;&nbsp;-  값이 변할 수 있는 변수일 경우 <strong>`var`</strong><span style="font-size: 12px;color: gray;">(<< Java의 'final' 키워드 같은)</span>  
+##### &nbsp;&nbsp;&nbsp;-  값이 변할 수 있는 변수일 경우 <strong>`var`</strong><span style="font-size: 12px;color: gray;">  (<< Java의 'final' 키워드 같은)</span>  
 
-<p>&nbsp;-<code class="highlighter-rouge">val</code>은 value, <code class="highlighter-rouge">var</code>는 variable의 약자로 추정된다.&nbsp;<span style="font-size: 12px;color: gray;">(‘var’는 javascript 같아서 반갑네 ㅎㅎ)</span></p>
+<p>&nbsp;-<code class="highlighter-rouge">val</code>은 value, <code class="highlighter-rouge">var</code>는 variable의 약자로 추정된다.&nbsp;<span style="font-size: 12px;color: gray;"> (‘var’는 javascript 같아서 반갑네 ㅎㅎ)</span></p>
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="s">val</span> <span class="">titleStr:</span> <span class="n">String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
 &nbsp; 
@@ -89,6 +89,30 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp; 
 &nbsp; 
 
+## 메소드(함수,function) 선언시 
+### fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 함수 실행문 }
+&nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
+&nbsp;&nbsp;cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.
+ &nbsp;
+* `Kotlin` Code Example
+{% highlight java %} 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.main_activity_layout)
+    }
+{% endhighlight %}
+* `Java` Code Example
+{% highlight java %} 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main_activity_layout)
+    }
+{% endhighlight %}
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
 
 ## Refs
 
