@@ -103,7 +103,6 @@ tags: [Kotlin]
 
 ## Refs
 
-* [Imooc 十天精通CSS3](http://www.imooc.com/learn/33)
-* [CSS Animation for Beginners](https://robots.thoughtbot.com/css-animation-for-beginners#animation-iteration-count)
-* [CSS3 animation-timing-function Property](http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp)
-
+* [김태호, 차세대 안드로이드 개발자를 위한 커니의 코틀린, 인사이트(2017)](https://book.naver.com/bookdb/book_detail.nhn?bid=12801360)
+* [Kotlin Basic Syntax](https://kotlinlang.org/docs/reference/basic-syntax.html)
+* [Kotlin API](https://kotlinlang.org/api/latest/jvm/stdlib/)
