@@ -7,6 +7,11 @@ tags: [Kotlin]
 
 # 코틀린 주요 특징 2 (Kotlin Feature)
 
+이 포스트에 정리되는 코틀린의 특징은 극히 일부분이다.
+'코틀린 주요 특징 1,2,3' 포스트에 정리된 내용 외에도 클래스, 상속 등등등 코틀린의 특징은 무수히 많다. &nbsp;
+
+그 중 코드 작성시 매번 마주치는 부분만 뽑아 정리해놓으려 한다. &nbsp;
+
 ## 변수 선언시 
 ### 1. 맨앞에 타입 가변성을 명시한다
 <p>&nbsp;-<code class="highlighter-rouge">val</code>은 value, <code class="highlighter-rouge">var</code>는 variable의 약자로 추정된다.&nbsp;<span style="font-size: 12px;color: gray;"> (‘var’는 javascript 같아서 반갑네 ㅎㅎ)</span></p>
