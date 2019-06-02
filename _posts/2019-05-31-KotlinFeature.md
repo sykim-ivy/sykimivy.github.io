@@ -92,59 +92,6 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp;- 관련된 별도의 포스팅 첨부 예정
 <br/><br/><br/>
 
-## Kotlin 조건문
-### switch문이 없고, when문을 사용한다.
-* `Kotlin` Code Example
-{% highlight java %}
-    when (keyCode) {
-      KeyEvent.KEYCODE_DPAD_UP -> {
-         true
-      }
-      KeyEvent.KEYCODE_DPAD_LEFT,
-      KeyEvent.KEYCODE_DPAD_RIGHT -> {
-         playEffectSound(EFFECT_MOVE)
-         false
-      }
-      else -> {
-         true
-      }
-    }
-{% endhighlight %}
-
-* `Java` Code Example
-{% highlight java %}
-    switch (keyCode) {
-      case KeyEvent.KEYCODE_DPAD_UP:
-         retValue = true;
-         break;
-      case KeyEvent.KEYCODE_DPAD_LEFT:
-      case KeyEvent.KEYCODE_DPAD_RIGHT:
-         playEffectSound(EFFECT_MOVE);
-         retValue = false;
-         break;
-      default:
-         retValue = true;
-         break;
-    }
-{% endhighlight %}
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-
-## Kotlin 반복문
-### for문을 지원하지 않고, for each문, while문을 지원한다
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-## 기타 외 특징들
-### 1. 람다 표현식(Lamda)을 지원한다
-### 2. 스트림 API(Stream API)를 지원한다
 &nbsp; 
 &nbsp; 
 &nbsp; 
