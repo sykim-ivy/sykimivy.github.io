@@ -7,6 +7,9 @@ tags: [Kotlin]
 
 # 코틀린 주요 특징 3 (Kotlin Feature)
 
+코틀린은 기존 자바와 동일한 점도 많지만 다른 점도 분명하다.
+조건문에는 뉴페이스를 만들어버렸고, 애용하던 Java의 for문은 일부 지원하지 않도록 변경되었다. &nbsp; &nbsp;
+
 ## Kotlin 조건문
 ### switch문이 없고, when문을 사용한다.
 * `Kotlin` Code Example
