@@ -42,7 +42,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 | **internal** | <strong><u>동일 모듈</u></strong> 내에서 접근 가능 |
 | protected | 선언된 클래스를 상속받은 클래스에서 접근 가능 |
 | privated | 선언된 클래스 내에서만 접근 가능 |
-&nbsp; 
+  
 &nbsp; 
 &nbsp; 
 ### 2. 맨앞에 타입 가변성을 명시한다
