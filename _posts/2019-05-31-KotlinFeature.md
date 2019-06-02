@@ -83,9 +83,9 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-java" data-lang="java">   <span class="n">val</span> <span class="nl">dessertBasket:</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">listOf</span><span class="o">(</span><span class="s">"Nougat"</span><span class="o">,</span> <span class="s">"Oreo"</span><span class="o">,</span> <span class="s">"Pie"</span><span class="o">)</span>
    <span class="n">dessertBasket</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Quesito"</span><span class="o">)</span>     <span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference'</span>
-<span class="n">    dessertBasket</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span>           <span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference: add'</span>
+<span class="n">    dessertBasket</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span>
    <span class="n">dessertBasket</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="s">"Oreo Mint flavor!"     <span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference'</span></span>
-   <span class="n">dessertBasket</span><span class="o">.</span><span class="na">removeAt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference: removeAt'</span></code></pre></figure>
+   <span class="n">dessertBasket</span><span class="o">.</span><span class="na">removeAt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span><span style="color:red;background-color: yellow;float: right;">Error : 빨간줄 발생 'unresolved reference'</span></code></pre></figure>
 
 &nbsp;- Kotlin은 기존 Java 컬렉션 클래스들을 타입 별칭(type alias)로 사용한다.
 <br/><br/>
@@ -122,10 +122,18 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp; 
 
 ## 메소드(함수,function) 선언시 
-### fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 함수 실행문 }
-&nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
+### 1. 함수 선언시 아래 순서를 따른다.
 
+`fun 함수명(파라미터명: 파라미터타입, ...): 리턴타입 { 함수 실행문 }`
+
+&nbsp;- 리턴값이 없는 경우 생략가능하고 리턴값이 없는 것을 명시할 경우 'Unit'으로 쓸 수 있다.
+<br/>
 &nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
+
+<br/>
+
+### 2. override 함수는 선언시 맨 앞에 `override`키워드로 명시한다
+<br/>
  &nbsp;
 * `Kotlin` Code Example
 {% highlight java %}
@@ -174,8 +182,8 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp; 
 &nbsp; 
 ## 기타 외 특징들
-### 람다 Lamda 표현식을 지원한다
-### 스트림 API를 지원한다
+### 람다 표현식(Lamda)을 지원한다
+### 스트림 API(Stream API)를 지원한다
 &nbsp; 
 &nbsp; 
 &nbsp; 
