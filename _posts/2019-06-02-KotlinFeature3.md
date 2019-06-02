@@ -47,13 +47,7 @@ tags: [Kotlin]
          break;
     }
 {% endhighlight %}
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
+
 <br/><br/><br/>
 
 ## Kotlin 반복문
