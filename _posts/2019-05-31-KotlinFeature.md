@@ -17,7 +17,9 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 
 그래서 신기하기도 하고 또 약간의 배움의 부담도 느껴지고 그런데 또 궁금하기도 하고하니  
 시작하자 코틀린!!  
-  
+ &nbsp;
+ &nbsp;
+ &nbsp;
 ## 코드 작성시 
 ### 1. 코드 문장 끝에 ';'을 찍지 않는다
 * `Java` Code Example
@@ -54,8 +56,8 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ##### &nbsp;&nbsp;&nbsp;-  Null값 비허용 타입 :  <strong>`타입명`</strong>  
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String?</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
-
-##### &nbsp;&nbsp;&nbsp;-  Null값 허용 타입 : <strong>`타입명<span style="background-color: yellow;">?</span>`</strong>  
+ &nbsp;
+##### &nbsp;&nbsp;&nbsp;-  Null값 허용 타입 : <strong>`타입명?`</strong>  
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr:</span> <span class="s"> String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
 &nbsp;※ 변수선언시 타입을 생략하는 경우, null을 허용하지 않는 타입으로 지정된다
@@ -69,7 +71,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 1. 맨앞에 타입 가변성을 명시한다
 
 ##### &nbsp;&nbsp;&nbsp;-  값이 변하지 않는 변수일 경우 <strong>`val`</strong>  
-##### &nbsp;&nbsp;&nbsp;-  값이 변할 수 있는 변수일 경우 <strong>`var`</strong>  
+##### &nbsp;&nbsp;&nbsp;-  값이 변할 수 있는 변수일 경우 <strong>`var`</strong><span style="font-size: 12px;color: gray;">(<< Java의 'final' 키워드 같은)</span></p>  
 
 <p>&nbsp;-<code class="highlighter-rouge">val</code>은 value, <code class="highlighter-rouge">var</code>는 variable의 약자로 추정된다.&nbsp;<span style="font-size: 12px;color: gray;">(‘var’는 javascript 같아서 반갑네 ㅎㅎ)</span></p>
 * `Kotlin` Code Example
@@ -80,12 +82,13 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 ### 2. 변수타입은 '변수명: 변수타입'으로 적거나 생략도 가능하다
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr</span> <span class="s">: String</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>
-&nbsp;- 변수타입 생략시 변수에 대입되는 값을 바탕으로 타입을 추론한다.
+&nbsp;- 변수타입 생략시 변수에 대입되는 값을 바탕으로 타입을 추론한다. <span style="font-size: 12px;color: gray;">(이때 타입은 non-null타입임을 명심하자!)</span></p>
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="">val</span> <span class="">titleStr</span> <span class="o">=</span> <span class="">"Hello World, I'm Title!"</span></code></pre></figure>  
 &nbsp; 
 &nbsp; 
 &nbsp; 
 &nbsp; 
+
 
 ## Refs
 
