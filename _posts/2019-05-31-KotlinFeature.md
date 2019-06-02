@@ -103,7 +103,8 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 &nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우도 리턴값이 없는 경우 생략가능하고, 명시할 경우 'void'로 쓸 수 있다.</span>
  &nbsp;
 * `Kotlin` Code Example
-{% highlight java %}override fun onCreate(savedInstanceState: Bundle?) {
+{% highlight java %}&nbsp;&nbsp;&nbsp;&nbsp;
+override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_layout)
     }
@@ -122,6 +123,9 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 
 ## 객체 생성시 
 ### 객체 생성시 'new'를 쓰지 않는다
+&nbsp;- Kotlin의 최상위 객체는 'Any'클래스이다.
+&nbsp; 
+&nbsp;&nbsp;&nbsp;<span style="font-size: 14px;color: #6f3016;">cf) Java의 경우 'Object'클래스이다.</span>
 * `Java` Code Example
 <figure class="highlight"><pre>
 <code class="language-tex" data-lang="tex">  private Object tempObj = <span style="color:red;background-color: yellow;">new</span> Object();</code>
@@ -130,7 +134,7 @@ Google I/O 2017 에서 안드로이드 공식 언어로 'Kotlin'으로 채택되
 * `Kotlin` Code Example
 <figure class="highlight"><pre><code class="language-tex" data-lang="tex"><span class="">   private</span> <span class="n">val</span> <span class="">tempObj <span class="o">=</span> <span class="">Any()</span></code></pre></figure>
    
-{% highlight java %}private val tempObj = Any(){% endhighlight %}
+
 &nbsp; 
 &nbsp; 
 &nbsp; 
