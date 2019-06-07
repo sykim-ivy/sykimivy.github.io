@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바 알고리즘 입문 ch1
+title: 최대값/최소값을 구하는 알고리즘 경우의 수
 category: Algorithm-Basic-Github
 tags: [Algorithm-Basic-Github]
 ---
