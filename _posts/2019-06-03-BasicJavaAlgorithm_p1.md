@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 최대값/최소값을 구하는 알고리즘 경우의 수
+title: N개의 값 중 최대값 or 최소값을 구하는 알고리즘 경우의 수
 category: Algorithm-Basic-Github
 tags: [Algorithm-Basic-Github]
 ---
 <br><br>
-보요 시바타 저 'Do it! 자료구조와 함께 배우는 알고리즘 입문'의 ch1장 공부 내용 기록입니다.<br>
+N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다가<br>
+최대값 혹은 최소갑이 발생할 수 있는 경우의 수가 궁금해졌다.<br>
 
 ## N개의 입력값 중 최댓값을 구하는 알고리즘
 <br/>
