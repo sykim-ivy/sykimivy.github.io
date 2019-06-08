@@ -194,10 +194,34 @@ public void notPureFunc(Person p1, String changeName, Person p2) {
 
 #### Frist Object (1급 객체)
 아래와 같은 연산을 지원할 때 일급 객체라고 한다.
+<br/>
   - 변수나 데이터에 할당 가능
+  {% highlight javascript %}
+  val firstObj = { x: Int, y: Int -> x+y } // return type Method : (x: Int, y: Int) -> Int
+  {% endhighlight %}
+  <br/>
+  
   - 함수에 매개변수로 전달 가능
+  {% highlight javascript %}
+    val firstObj = { x: Int, y: Int -> x+y }
+    fun tempFuction(func: (x: Int, y: Int) -> Int) {
+        func.hashCode()
+    }
+    
+    
+    @JvmStatic
+    fun main(args: Array<String>) {
+      tempFuction(firstObj)
+    }
+  {% endhighlight %}
+  <br/>
   - 리턴값으로 사용가능
-
+  {% highlight javascript %}
+  fun tempFuction(): (x: Int, y: Int) -> Int {
+     return { n1: Int, n2: Int -> n1 + n2 }
+  }
+  {% endhighlight %}
+<br/>
 <br><br>
 
 #### 고차 함수 (High-Order Function)
@@ -208,9 +232,8 @@ public void notPureFunc(Person p1, String changeName, Person p2) {
  
 <br><br>
 ▶ 함수형 프로그래밍 특징을 가진 언어 : Kotlin, Haskell, Sheme
-<br/><br/><br>
-
-
+<br/><br/>
+이 외 함성 함수, 커링 등등 더 많은 것들이 있지만 이하 생략합니다...<br>
 <br><br>
 
 <br><br><br>
