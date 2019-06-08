@@ -130,10 +130,73 @@ structured programming은 GOTO문을 없애거나 GOTO문에 대한 의존성을
 <br/><br/><br/>
 
 ## 6. 함수형 프로그래밍
-`자료 처리를 수학적 함수의 계산으로 취급`하고 상태와 가변 데이터를 멀리하는 프로그래밍 패러다임<br/>
-선언형 프로그래밍 패러다임을 따르고 있다.<br/><br/>
-이해가 가장 어려운 패러다임이다. <br/>
-cf) 명령형 프로그래밍에서는 상태를 바꾸는 것을 강조하는 것과는 달리, 함수형 프로그래밍은 `함수의 응용`을 강조한다.<br/>
+내가 봤을때 이해가 가장 어려웠고 좋고 싫음이 진짜 확실한 패러다임이다;;;<br/>
+그래서 이 녀석이 좋아하는 것(순수함수, 함수의 명확한 입출력)과 싫어하는 것(Side-effect, 가변성, 복잡성, 버그)을 명확히 알면 이해가 간다.<br/>
+<br/><br/>
+
+자료 처리를 수학적 함수의 계산으로 취급하고 상태와 `가변 데이터를 멀리하는` 프로그래밍 패러다임<br/>
+<br>
+'수학적 함수의 계산으로 취급'한다는 것이 무슨 말일까? <br>
+ : 수학적 함수와 명령형 프로그래밍에서 사용되는 함수는 차이가 있는데, 명령형의 함수는 프로그램의 상태의 값을 바꿀 수 있는 부작용이 생길 수 있다. <br>
+그럼 일단 그 부작용부터 알아보자.
+#### Side effect (부작용)
+**명령형 함수의 부작용 발생 Example)**
+{% highlight java %}
+private Person personSykim = new Person();
+private Person personJessica = new Person();
+
+public void notPureFunc() {
+    Person.armNum = 3; // 특정 클래스의 static 변수 혹은 함수 호출 (상태 및 프로퍼티 등등 이 호출로 변할 범위가 무궁무진함)
+    personSykim.setName("ivy");
+    personJessica.doNextProcess();
+    // 전역 객체를 불러와 객체의 메소드 호출 (상태 및 프로퍼티 등등 이 호출로 변할 범위가 무궁무진함)
+}
+{% endhighlight %}
+
+위 notPureFunc() 메소드는 입력 파라미터 및 출력 리턴값이 없다.<br>
+그럼에도 함수 내에서 실행되는 여러 기능으로 인하여 입출력처럼 외부 상태를 변경할 수 있는데<br>
+바로 이렇듯 함수선언만으론 알 수 없는 비밀스런 프로그램 상태변경 작용(?)들을 `Side-effect (부작용)`이라고 한다.<br>
+<br>
+이 '부작용'때문에 명령형 함수는 참조 투명성이 없고, 같은 코드라도 실행되는 프로그램의 상태에 따라 다른 결과값을 낼 수 있다.<br>
+그리고 이런 부작용을 매우 싫어하는 함수형 프로그래밍은 명령형 프로그래밍이 아닌 (프로그래밍이 문이 아닌 식이나 선언으로 수행되는) 선언형 프로그래밍 패러다임을 따르고 있다.<br>
+<br><br>
+그렇다면, 함수형 프로그래밍은 어떻게 프로그래밍하는 것인가?<br>
+바로 순수함수로 작성하여 부작용을 최대한 없애는 것이다<br>
+#### 순수함수 (Pure fuction)
+: 함수의 실행이 외부에 영향을 끼치지 않는 함수<br>
+ - 외부 영향이 없어 스레드 안전하고, 병렬적인 계산이 가능하다.<br>
+**순수 함수로 바꿔본 위의 부작용 Example)**
+{% highlight java %}
+private Person personSykim = new Person();
+private Person personJessica = new Person();
+
+public void notPureFunc(Person p1, String changeName, Person p2) {
+    Person changeNamePerson = p1.clone();
+    Person doNextProcessPerson = p2.clone();
+    changeNamePerson.setName(changeName);
+    doNextProcessPerson.doNextProcess();
+}
+{% endhighlight %}
+ - 순수 함수는 수학적 함수 y = f(x)처럼 x를 입력하면 항상 y라는 동일값이 나오도록 해야한다.
+ - 더불어 순수 함수 수행 과정에서 side-feect 작용(상태값 변경 등등)이 있어선 안됨!
+<br>
+더불어 위 예시에는 함수형 프로그래밍의 특징 `불변성 (Immutability)`이 적용되어 있다. <br>
+#### 불변성 (Immutability)
+위와 같이 데이터가 변할 수 없도록 하며, 데이터 변경이 필요한 경우 데이터 복사본을 만들어 변경 작업을 진행한다.<br>
+더불어 함수형 프로그래밍의 특징이 더 있다.
+<br><br>
+### Frist Object (1급 객체)
+아래와 같은 연산을 지원할 때 일급 객체라고 한다.
+ - 변수나 데이터에 할당 가능
+ - 함수에 매개변수로 전달 가능
+ - 리턴값으로 사용가능
+
+<br>
+▶ 함수형 프로그래밍 특징을 가진 언어 : Kotlin, Haskell, Sheme
+<br/><br/>
+
+
+
 <br/>
 
 
@@ -169,8 +232,13 @@ cf) 명령형 프로그래밍에서는 상태를 바꾸는 것을 강조하는 �
 * [Procedural programming, 절차적 프로그래밍, 나무위키](https://namu.wiki/w/%EC%A0%88%EC%B0%A8%EC%A0%81%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 * [Structured programming, 구조적 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EA%B5%AC%EC%A1%B0%EC%A0%81_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 * [객체지향 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+
 * [함수형 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 * [(번역) 함수형 프로그래밍이란 무엇인가?](https://medium.com/@jooyunghan/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-fab4e960d263)
+* [함수형 프로그래밍 요약](https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9A%94%EC%95%BD)
 * [함수형 프로그래머가 되고 싶다고? (Part 1)
 ](https://github.com/FEDevelopers/tech.description/wiki/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EA%B0%80-%EB%90%98%EA%B3%A0-%EC%8B%B6%EB%8B%A4%EA%B3%A0%3F-(Part-1))
+* [1급 객체, 위키백과](https://ko.wikipedia.org/wiki/%EC%9D%BC%EA%B8%89_%EA%B0%9D%EC%B2%B4)
+* [1급 객체(First-class citizen) 란? with Kotlin](https://medium.com/@lazysoul/functional-programming-%EC%97%90%EC%84%9C-1%EA%B8%89-%EA%B0%9D%EC%B2%B4%EB%9E%80-ba1aeb048059)
+
 * [보요 시바타, Do it! 자료구조와 함께 배우는 알고리즘 입문, 강민,  이지스퍼블리싱(2018)](https://book.naver.com/bookdb/book_detail.nhn?bid=13560672)
