@@ -111,8 +111,11 @@ structured programming은 GOTO문을 없애거나 GOTO문에 대한 의존성을
 
 ## 5. 객체 지향 프로그래밍 (Object-Oriented Programming, OOP)
 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 **`객체`**들의 모임으로 파악하고자 하는 것이다.<br/>
+ - 데이터(프로퍼티)와 절차(메서드,함수, 일종의 기능이나 동작, 프로시저)를 `객체`로 묶어 모듈화
+<br>
 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다.<br/>
 <br><br>
+
 ### 객체 지향 프로그래밍의 기본 구성 단위
 #### 1. 클래스(Class) 
 - 같은 종류(또는 문제 해결을 위한)의 집단에 속하는 속성(attribute)과 행위(behavior)를 정의한 것으로 객체지향 프로그램의 기본적인 사용자 정의 데이터형(user define data type)이라고 할 수 있다. 클래스는 프로그래머가 아니지만 해결해야 할 문제가 속하는 영역에 종사하는 사람이라면 사용할 수 있고, 다른 클래스 또는 외부 요소와 독립적으로 디자인하여야 한다.
@@ -122,13 +125,18 @@ structured programming은 GOTO문을 없애거나 GOTO문에 대한 의존성을
 
 #### 3.메서드(Method), 메시지(Message) 
  - 클래스로부터 생성된 객체를 사용하는 방법으로서 객체에 명령을 내리는 메시지라 할 수 있다. 메서드는 한 객체의 서브루틴(subroutine) 형태로 객체의 속성을 조작하는 데 사용된다. 또 객체 간의 통신은 메시지를 통해 이루어진다.
-
-<br/><br/>
+<br>
++) [내기준으로 쉽게 설명한 객체지향 프로그래밍 포스팅](http://blog.wishket.com/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-vs-%EC%A0%88%EC%B0%A8%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/)
+<br/><br/><br/>
 
 ## 6. 함수형 프로그래밍
 `자료 처리를 수학적 함수의 계산으로 취급`하고 상태와 가변 데이터를 멀리하는 프로그래밍 패러다임<br/>
-선언형 프로그래밍 패러다임을 따르고 있다.<br/>
-cf) 명령형 프로그래밍에서는 상태를 바꾸는 것을 강조하는 것과는 달리, 함수형 프로그래밍은 함수의 응용을 강조한다.
+선언형 프로그래밍 패러다임을 따르고 있다.<br/><br/>
+이해가 가장 어려운 패러다임이다. <br/>
+cf) 명령형 프로그래밍에서는 상태를 바꾸는 것을 강조하는 것과는 달리, 함수형 프로그래밍은 `함수의 응용`을 강조한다.<br/>
+<br/>
+
+
 <br><br>
 
 <br><br><br>
@@ -157,9 +165,12 @@ cf) 명령형 프로그래밍에서는 상태를 바꾸는 것을 강조하는 �
 * [Declarative programming, 선언형 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EC%84%A0%EC%96%B8%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 *[Imperative vs Declarative Programming 번역](https://github.com/chocoma87/ToyProject/wiki/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80-6-(Imperative-vs-Declarative-Programming))
 *[Imperative vs Declarative Programming 원본](https://tylermcginnis.com/imperative-vs-declarative-programming/)
-* [구조적 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EA%B5%AC%EC%A1%B0%EC%A0%81_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
-* [절차적 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%88%EC%B0%A8%EC%A0%81_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
-* [절차적 프로그래밍, 나무위키](https://namu.wiki/w/%EC%A0%88%EC%B0%A8%EC%A0%81%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
-* [함수형 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+* [Procedual programming, 절차적 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%88%EC%B0%A8%EC%A0%81_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+* [Procedural programming, 절차적 프로그래밍, 나무위키](https://namu.wiki/w/%EC%A0%88%EC%B0%A8%EC%A0%81%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+* [Structured programming, 구조적 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EA%B5%AC%EC%A1%B0%EC%A0%81_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 * [객체지향 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+* [함수형 프로그래밍, 위키백과](https://ko.wikipedia.org/wiki/%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+* [(번역) 함수형 프로그래밍이란 무엇인가?](https://medium.com/@jooyunghan/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-fab4e960d263)
+* [함수형 프로그래머가 되고 싶다고? (Part 1)
+](https://github.com/FEDevelopers/tech.description/wiki/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EA%B0%80-%EB%90%98%EA%B3%A0-%EC%8B%B6%EB%8B%A4%EA%B3%A0%3F-(Part-1))
 * [보요 시바타, Do it! 자료구조와 함께 배우는 알고리즘 입문, 강민,  이지스퍼블리싱(2018)](https://book.naver.com/bookdb/book_detail.nhn?bid=13560672)
