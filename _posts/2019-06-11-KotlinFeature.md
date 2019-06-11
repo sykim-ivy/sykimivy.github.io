@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 자바 알고리즘 입문 ch1 (프로그래밍 패러다임)
-category: Git push error: “fatal: 'origin' does not appear to be a git repository”
+title: Git push error: “fatal: 'origin' does not appear to be a git repository”
+category: Git
 tags: [Git]
 ---
 <br><br>
