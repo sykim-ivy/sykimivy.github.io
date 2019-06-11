@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git push 에러 “fatal 'origin' does not appear to be a git repository”
+title: Git push 에러 “'origin' does not appear to be a git repository”
 category: Git
 tags: [Git]
 ---
