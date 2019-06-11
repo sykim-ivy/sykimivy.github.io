@@ -1,0 +1,65 @@
+---
+layout: post
+title: 자바 알고리즘 입문 ch1 (프로그래밍 패러다임)
+category: Git push error: “fatal: 'origin' does not appear to be a git repository”
+tags: [Git]
+---
+<br><br>
+`$ git push origin master`
+<br>
+위와 같이 git push를 요청하는데 아래와 같은 에러 메시지가 나타난다.
+{% highlight %}
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+{% endhighlight %}
+<br>
+<br>
+아래 명령어를 통해 내가 입력한 origin명을 확인해보자.<br>
+<br>
+`git remote -v`
+{% highlight %}
+origin  https://github.com/sykim-ivy/java-algorithm-basic.git (fetch)
+origin  https://github.com/sykim-ivy/java-algorithm-basic.git (push)
+{% endhighlight %}
+<br>
+#### git remote 
+ - 현재 프로젝트에 등록된 리모트 저장소를 확인할 수 있으며, 리모트 저장소의 단축 이름을 보여준다. <br>
+ - `-v` 옵션을 주어 단축이름과 URL을 함께 볼 수 있다. <br>
+ - 저장소를 Clone시 `origin`이라는 리모트 저장소가 자동으로 등록되기 때문에 `origin`이라는 이름을 볼 수 있다.<br>
+ 
+<br><br>
+나의 경우 'origin'을 'orgin'으로 잘못 기입한 문제였다 ㅎㅎ;<br>
+#### 여기서 'orgin'이란 건 정확히 뭘까?? 
+궁금해져서 찾아보니 `원격 저장소 URL의 단축 alias`라고 한다.<br>
+친절한 stackoverflow 답변 >> It is rather a local alias set as a key in place of the remote repository URL.<br>
+<br>
+<br>
+#### 기존 remote 별칭 변경
+간혹 정말 orgin이 등록 안되는 경우도 있지만 내경우 등록명을 잘못 등록한 것이니 수정하면 빠르게 해결하였다<br>
+아래 명령어를 통해 orgin을 orgin으로 변경해주니 push가 잘 된다! :-)<br>
+`git remote rename orgin origin`
+<br><br>
+
+#### 로컬경로에 원격 저장소를 추가 및 remote 별칭 생성
+$ git remote add <단축이름> <url>
+ - `git clone` 명령은 묵시적으로 origin 리모트 저장소를 어떻게 추가
+<br>
+{% highlight %}
+$ git remote
+origin
+$ git remote add pb https://github.com/paulboone/ticgit
+$ git remote -v
+origin	https://github.com/schacon/ticgit (fetch)
+origin	https://github.com/schacon/ticgit (push)
+pb	https://github.com/paulboone/ticgit (fetch)
+pb	https://github.com/paulboone/ticgit (push)
+{% endhighlight %}
+<br>
+
+<br><br><br>
+
+## Refs
+[Git push error: “origin does not appear to be a git repository”](https://stackoverflow.com/a/15445062)
+[What is “origin” in Git?](https://stackoverflow.com/questions/9529497/what-is-origin-in-git)
+[2.5 Git의 기초 - 리모트 저장소](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C)
+
