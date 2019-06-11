@@ -73,7 +73,7 @@ git도 공부해야할 게 많다 ㅎㅎㅎ
 <br><br><br>
 
 ## Refs
-[Git push error: “origin does not appear to be a git repository”](https://stackoverflow.com/a/15445062)
-[What is “origin” in Git?](https://stackoverflow.com/questions/9529497/what-is-origin-in-git)
-[2.5 Git의 기초 - 리모트 저장소](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C)
+[Git push error: “origin does not appear to be a git repository”] (https://stackoverflow.com/a/15445062)
+[What is “origin” in Git?] (https://stackoverflow.com/questions/9529497/what-is-origin-in-git)
+[2.5 Git의 기초 - 리모트 저장소] (https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C)
 
