@@ -28,7 +28,7 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
     <br>
     <br>
  * `팩토리얼`  = <sub>N</sub>P<sub>N</sub> : N개를 순서대로 나열하는 경우의 수<br>
-    <sub>N</sub>C<sub>N</sub> = N * (N-1) * ... * 1 = `N!`
+    <sub>N</sub>C<sub>N</sub>  =  N * (N-1) * ... * 1 = `N!`
 <br>
 <br>
 <br> 
@@ -51,16 +51,16 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
     <br>
     <br>
  * 추가적으로 다음과 같은 공식도 성립한다.<br>
-    <sub>N</sub>C<sub>S</sub> = <sub>N</sub>C<sub>(N - S)</sub> <br>
+    <sub>N</sub>C<sub>S</sub> = <sub>N</sub>C<sub> (N - S)</sub> <br>
  <br>
  * 어쩌면 당연한 공식<br>   
     <sub>N</sub>C<sub>(N - 1)</sub> = N
  <br>
  N개에서 S개를 순서없이 뽑으면 남은 (N-S)개들도 일종의 조합이 된다.<br> 
  그러므로 N개에서 (N-S)개를 순서없이 뽑는 값과 같다.<br>
- <br>
- * 이 외에 조합에는 [파스칼의 삼각형 공식](http://blog.naver.com/PostView.nhn?blogId=baboedition&logNo=220929686431)들이 있는데 생략한다.
-<br>
+ <br>* 이 외에 조합에는 [파스칼의 삼각형 공식](http://blog.naver.com/PostView.nhn?blogId=baboedition&logNo=220929686431)들이 있는데 생략한다.<br>
+<br> 
+<br> 
 <br> 
 당연한 말이지만 순서대로 나열한 순열이 항상 조합보다 클 수 밖에 없다.<br>
 순열에서는 (빨,주,노) != (노,빨,주) 부터 다르니까 <br>
