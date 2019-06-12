@@ -112,7 +112,7 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
 <br>
 그러므로 `N개의 입력값 중 최댓값을 찾을때 입력값들의 경우의 수`는 #1, #2, #3의 경우의 수를 모두 더한 값이 된다.<br>
 <span style="color:#2098d1;">
- N! + [<sub>N</sub>C<sub>(N - 1)</sub> * 2!) +  <sub>N</sub>C<sub>(N - 2)</sub> * 3! + <sub>N</sub>C<sub>(N - 3)</sub> * 4! + ... + <sub>N</sub>C<sub>( N - (N-2) )</sub> * (N-1)! ] + 1
+ N! + [ <sub>N</sub>C<sub>(N - 1)</sub> * 2!) +  <sub>N</sub>C<sub>(N - 2)</sub> * 3! + <sub>N</sub>C<sub>(N - 3)</sub> * 4! + ... + <sub>N</sub>C<sub>( N - (N-2) )</sub> * (N-1)! ] + 1
 </span>
 
 
