@@ -45,10 +45,16 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
  * Example value <br>
     <sub>7</sub>C<sub>3</sub> = <sup>7 * 6 * 5</sup>  /  <sub>3 * 2 * 1</sub> = 35
     <br>
+    <br>
+ * 추가적으로 다음과 같은 공식도 성립한다.<br>
+    <sub>N</sub>C<sub>S</sub> = <sub>N</sub>C<sub>(N - S)</sub>
+ <br>
+ N개에서 S개를 순서없이 뽑으면 남은 (N-S)개들도 일종의 조합이 된다.<br> 
+ 그러므로 N개에서 (N-S)개를 순서없이 뽑는 값과 같다.<br>
+ <br>
+ * 이 외에 조합에는 [파스칼의 삼각형 공식](http://blog.naver.com/PostView.nhn?blogId=baboedition&logNo=220929686431)들이 있는데 생략한다.
 <br>
 <br> 
-
-
 
 ## N개의 입력값 중 최댓값을 구하는 알고리즘
 <br/>
@@ -87,3 +93,5 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
 ## Refs
 
 * [보요 시바타, Do it! 자료구조와 함께 배우는 알고리즘 입문, 강민,  이지스퍼블리싱(2018)](https://book.naver.com/bookdb/book_detail.nhn?bid=13560672)
+* [잘 설명해주신 순열과 조합](http://blog.naver.com/PostView.nhn?blogId=baboedition&logNo=220929686431)
+
