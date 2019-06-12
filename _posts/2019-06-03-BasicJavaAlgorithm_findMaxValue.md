@@ -12,7 +12,7 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
 찾다보니 이는 `순열`과 `조합`을 알아야한다.<br>
 <br>
 <h2> 순열 <sub>N</sub>P<sub>S</sub> </h2>
- : <p style="color: #c7254e;">N개 중 S개를 뽑아 <strong>순서대로</strong> 나열하는 경우의 수</p>  <br>
+ <p style="color: #c7254e;">N개 중 S개를 뽑아 <strong>순서대로</strong> 나열하는 경우의 수</p>  <br>
   * Example <br>
     빨주노초파남보 7가지 색 중에 3가지를 뽑아 나열하는 경우의 수 => <sub>7</sub>P<sub>3</sub>
 <br>
@@ -20,26 +20,26 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
  * 공식<br>
 <sub>N</sub>P<sub>S</sub> = N * (N-1) * ... * ( N-(S-1) )
  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;= N부터 1개씩 작아지는 수들을 총 S개를 곱함
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= N부터 1개씩 작아지는 수들을 총 S개를 곱함
 <br>
 <br>
  * Example value <br>
-    <sub>7</sub>P<sub>3</sub> = <sup>7 * 6 * 5</sup> = 210
+    <sub>7</sub>P<sub>3</sub> = 7 * 6 * 5 = 210
     <br>
 <br>
 <br> 
 
 
 <h2> 조합 <sub>N</sub>C<sub>S</sub> </h2>
- : <p style="color: #c7254e;"><strong>순서없이</strong> N개 중 S개를 뽑은 경우의 수</p><br>
+ <p style="color: #c7254e;"><strong>순서없이</strong> N개 중 S개를 뽑은 경우의 수</p><br>
   * Example <br>
     빨주노초파남보 7가지 색 중에 3가지를 뽑는 경우의 수 => <sub>7</sub>C<sub>3</sub>
 <br>
 <br>
  * 공식<br>
 <sub>N</sub>C<sub>S</sub> = <sup>N * (N-1) * ... * ( N-(S-1) )</sup> / <sub>S * (S-1) * ... * 1</sub> 
- <br>
-&nbsp;&nbsp;&nbsp;&nbsp;= <sup>N부터 1개씩 작아지는 수들을 총 S개를 곱함</sup>  /  <sub>S부터 1개씩 작아지는 수 총 S개를 곱함 (=S!)</sub>
+ <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <sup>N부터 1개씩 작아지는 수들을 총 S개를 곱함</sup>  /  <sub>S부터 1개씩 작아지는 수 총 S개를 곱함 (=S!)</sub>
 <br>
 <br>
  * Example value <br>
