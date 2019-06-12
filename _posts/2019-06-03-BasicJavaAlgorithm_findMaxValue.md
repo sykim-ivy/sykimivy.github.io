@@ -12,7 +12,7 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
 찾다보니 이는 `순열`과 `조합`을 알아야한다.<br>
 <br>
 <h2> 순열 <sub>N</sub>P<sub>S</sub> </h2>
- <p style="color: #c7254e;">N개 중 S개를 뽑아 <strong>순서대로</strong> 나열하는 경우의 수</p>  <br>
+ <p style="color: #c7254e;">N개 중 S개를 뽑아 <strong>순서대로</strong> 나열하는 경우의 수</p>
   * Example <br>
     빨주노초파남보 7가지 색 중에 3가지를 뽑아 나열하는 경우의 수 => <sub>7</sub>P<sub>3</sub>
 <br>
@@ -26,12 +26,16 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
  * Example value <br>
     <sub>7</sub>P<sub>3</sub> = 7 * 6 * 5 = 210
     <br>
+    <br>
+ * `팩토리얼`  = <sub>N</sub>P<sub>N</sub> : N개를 순서대로 나열하는 경우의 수<br>
+    <sub>N</sub>C<sub>N</sub> = N * (N-1) * ... * 1 = `N!`
+<br>
 <br>
 <br> 
 
 
-<h2> 조합 <sub>N</sub>C<sub>S</sub> </h2>
- <p style="color: #c7254e;"><strong>순서없이</strong> N개 중 S개를 뽑은 경우의 수</p><br>
+<h2>조합 <sub>N</sub>C<sub>S</sub> </h2>
+ <p style="color: #c7254e;"><strong>순서없이</strong> N개 중 S개를 뽑은 경우의 수</p>
   * Example <br>
     빨주노초파남보 7가지 색 중에 3가지를 뽑는 경우의 수 => <sub>7</sub>C<sub>3</sub>
 <br>
@@ -47,7 +51,7 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
     <br>
     <br>
  * 추가적으로 다음과 같은 공식도 성립한다.<br>
-    <sub>N</sub>C<sub>S</sub> = <sub>N</sub>C<sub>(N - S)</sub>
+    <sub>N</sub>C<sub>S</sub> = <sub>N</sub>C<sub>(N - S)</sub> <br>
  <br>
  N개에서 S개를 순서없이 뽑으면 남은 (N-S)개들도 일종의 조합이 된다.<br> 
  그러므로 N개에서 (N-S)개를 순서없이 뽑는 값과 같다.<br>
@@ -55,7 +59,10 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
  * 이 외에 조합에는 [파스칼의 삼각형 공식](http://blog.naver.com/PostView.nhn?blogId=baboedition&logNo=220929686431)들이 있는데 생략한다.
 <br>
 <br> 
-
+당연한 말이지만 순서대로 나열한 순열이 항상 조합보다 클 수 밖에 없다.<br>
+순열에서는 (빨,주,노) != (노,빨,주) 부터 다르니까 <br>
+<br> 
+<br> 
 ## N개의 입력값 중 최댓값을 구하는 알고리즘
 <br/>
 입력값의 수에 따라 몇가지의 경우의 수가 생기는지 궁금하다.<br/>
