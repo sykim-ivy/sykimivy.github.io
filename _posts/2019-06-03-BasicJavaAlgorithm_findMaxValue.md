@@ -13,16 +13,24 @@ N개의 입력값 중 최댓값을 구하는 알고리즘 코드를 작성하다
 
 <h2> 순열 <sub>N</sub>P<sub>S</sub> </h2>
  : N개 중 S개를 뽑아 <strong>순서대로</strong> 나열하는 경우의 수  <br>
-  * Example
+  * Example <br>
     빨주노초파남보 7가지 색 중에 3가지를 뽑아 나열하는 경우의 수 => <sub>7</sub>P<sub>3</sub>
 <br>
-
+<br>
+ * 공식<br>
 <sub>N</sub>P<sub>S</sub> <br>
-= <sup>N * (N-1) * ..(N-(S-1))</sup> / <sub>S * (S-1) * ... * 1</sub> 
+= <sup>N * (N-1) * ... * ( N-(S-1) )</sup> / <sub>S * (S-1) * ... * 1</sub> 
  <br>
 = <sup>N부터 1개씩 작아지는 수 총 S개를 곱함</sup> / <sub>S부터 1개씩 작아지는 수 총 S개를 곱함 (=S!)</sub>
-
 <br>
+<br>
+ * Example value <br>
+    빨주노초파남보 7가지 색 중에 3가지를 뽑아 나열하는 경우의 수 => <sub>7</sub>P<sub>3</sub> 
+    <br>
+    = <sup>7 * 6 * 5</sup>/<sub>3 * 2 * 1</sub> = 35
+    <br>
+<br>
+<br> 
 
 ## N개의 입력값 중 최댓값을 구하는 알고리즘
 <br/>
