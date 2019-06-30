@@ -31,11 +31,17 @@ void swap(int a, int b) {
  int temp = a;
  a = b;
  b = a;
+ // [Comment] Changed a and b here 
 }
 
 int ten = 10;
 int twenty = 20;
+
 swap(ten, twenty);
+
+// [Comment] Not Changed ten and twenty here 
+printf("ten = %d", ten); // 10
+printf("twenty = %d", twenty); // 20
 {% endhighlight }
 <br/>
 <br/>
