@@ -52,7 +52,7 @@ void swap(int a, int b) {
 <br/>
 
 ## Pass by Reference (= Call by Reference)
-함수 호출시 매개변수로 전달한 인자의 메모리에 저장된 참조값(=주소값)을 복사해서 함수 내 매개변수로 사용하는 것<br>
+함수 호출시 매개변수로 전달한 인자의 메모리의 참조값(=주소값을) 전달해서 함수 내 매개변수로 사용하는 것</br>
 * ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형하면 전달한 함수 외부 변수에도 영향 有
 * C 'Call by Reference' Example
 {% hightlight c %}
@@ -124,17 +124,26 @@ void swap(int *a, int *b) {
       // [Comment] Changed objClassVal.propertyIntVar like 'Call by Reference' Why?!!
  }
  
- private static void plus10ToObject(ObjClassVar a) {
-     a.propertyIntVar += 10;
+ private static void plus10ToObject(ObjClassVar argsObjClassVal) {
+     argsObjClassVal.propertyIntVar += 10;
  }
  {% endhighlight %}
 <p>&nbsp;&nbsp;하지만 그래도 <strong>call by value</strong>이다. 왜??</p>
+Java는 앞서 언급한 듯이 **참조형 변수(Reference Type Variables)** 타입의 변수들이 있다.<br/>
+그리고 `참조형 변수는 메모리에 저장된 값(=value)이 참조값(=주소값)`이다.<br/><br/>
 
-
+그래서 이 참조형 변수들을 함수 호출시 매개변수로 전달하면 `Call by Value`인 자바는 </br>
+참조형 변수의 메모리에 저장된 값(=value)인 참조값(=주소)를 복사하여 함수 내 매개변수로 준다.</br>
+-> 위 예제에서는 plus10ToObject() 메소드를 호출할때 'objClassVal'의 값(=value)인 참조값(=주소)을 복사하여<br/>
+plus10ToObject() 메소드 내 파라미터 'argsObjClassVal'의 값(=value)으로 전달하였다. **Call by Value**로써!<br/>
+objClassVal와 argsObjClassVal의 변수 자체의 메모리의 참조값(=주소)는 다르지만, <br/>
+메모리에 저장된 값(=value)인 참조값은 같은 ObjClassVar객체를 가리킨다.<br/>
+ * 헷갈릴 것 같은 경우 [여기](https://stackoverflow.com/a/12429953) 그림으로 잘 설명해놓은 분이 있어 첨부한다. 
 <br/>
 <br/>
-여기서 또 헷갈리는 녀석이 등장한다.<br/>
+음 이제 끝날 것 같지만 여기서 또 헷갈리는 녀석이 등장한다.<br/>
 <p>&nbsp;- 자바의 래퍼형 변수(Wrapper Type Variables)는 Class 타입이지만 외부값이 변하지 않는다 왜?</p>
+
 <br/>
 <br/>
 <br/>
@@ -149,4 +158,4 @@ void swap(int *a, int *b) {
 ## Refs
 
 * [Stackoverflow, Are call-by-value and pass-by-value synonymous?](https://stackoverflow.com/a/4987266)
-
+* [Stackoverflow, Is Java “pass-by-reference” or “pass-by-value”?](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
