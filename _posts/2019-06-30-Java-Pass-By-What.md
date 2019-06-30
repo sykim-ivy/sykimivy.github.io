@@ -44,7 +44,7 @@ int main() {
 void swap(int a, int b) {
  int temp = a;
  a = b;
- b = a;
+ b = temp;
  // [Comment] Changed a and b here 
 }
 {% endhighlight }
@@ -54,7 +54,29 @@ void swap(int a, int b) {
 ## Pass by Reference (= Call by Reference)
 함수 호출시 매개변수로 전달한 인자의 메모리에 저장된 참조값(=주소값)을 복사해서 함수 내 매개변수로 사용하는 것<br>
 * ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형해도 함수 외부에 영향 有
+* C 'Call by Reference' Example
+{% hightlight c %}
+void swap(int *a, int *b);
 
+int main() {
+
+   int ten = 10;
+   int twenty = 20;
+
+   swap(&ten, &twenty);
+
+   // [Comment] Changed ten and twenty here 
+   printf("ten = %d", ten); // 20
+   printf("twenty = %d", twenty); // 10
+}
+
+void swap(int *a, int *b) {
+ int temp = *a;
+ *a = *b;
+ *b = *temp;
+ // [Comment] Changed a and b here 
+}
+{% endhighlight }
 <br/>
 <br/>
 
@@ -65,6 +87,7 @@ void swap(int a, int b) {
  {% highlight java %}
  private static void plus10Toint(int a) {
     a+=10;
+    // [Comment] Changed a of value here
  }
  
  public static void main(String[] args) {
@@ -72,15 +95,37 @@ void swap(int a, int b) {
      System.out.println("primitVar = " + primitVar); // 10
      plus10Toint(primitVar);
      System.out.println("primitVar = " + primitVar); // 10
+     
+     // [Comment] Not Changed primitVar as 'Call by Value'
  }
  {% endhighlight %}
 <br/>
 <br/>
 이제 헷갈리는 자바의 참조형 변수(Reference Type Variables)를 봐야한다.<br/>
-<p>&nbsp;- 자바의 참조형 변수(Reference Type Variables)는 함수 매개변수 전달로 전달하면 외부에 영향을 준다.</p>
+<p>&nbsp;- 자바의 참조형 변수(Reference Type Variables)는 함수 매개변수 전달로 전달하면 외부에 영향을 준다. <br/>
+마치 'Call by Reference'같다?!!;;;;</p>
 * Java Reference type 'Call by Value' Example
  {% highlight java %}
+ static class ObjClassVar {
+     int propertyIntVar;
+     ObjClassVar(int val) {
+         this.propertyIntVar = val;
+         // [Comment] Changed propertyIntVar of value here
+     }
+ }
  
+ public static void main(String[] args) {
+      ObjClassVar objClassVal = new ObjClassVar(10);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 10
+      plus10ToObject(objClassVal);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 20
+      
+      // [Comment] Changed objClassVal.propertyIntVar like 'Call by Reference' Why?!!
+ }
+ 
+ private static void plus10ToObject(ObjClassVar a) {
+     a.propertyIntVar += 10;
+ }
  {% endhighlight %}
 <p>&nbsp;&nbsp;하지만 그래도 <strong>call by value</strong>이다. 왜??</p>
 
