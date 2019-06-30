@@ -105,7 +105,7 @@ void swap(int *a, int *b) {
 이제 헷갈리는 자바의 참조형 변수(Reference Type Variables)를 봐야한다.<br/>
 <p>&nbsp;- 자바의 참조형 변수(Reference Type Variables)는 함수 매개변수 전달로 전달하면 외부에 영향을 준다. <br/>
 마치 'Call by Reference'같다?!!;;;;</p>
-* Java Reference type 'Call by Value' Example
+* Java Reference type 'Call by Value' Example 1
  {% highlight java %}
  static class ObjClassVar {
      int propertyIntVar;
@@ -138,24 +138,76 @@ Java는 앞서 언급한 듯이 **참조형 변수(Reference Type Variables)** �
 plus10ToObject() 메소드 내 파라미터 'argsObjClassVal'의 값(=value)으로 전달하였다. **Call by Value**로써!<br/>
 objClassVal와 argsObjClassVal의 변수 자체의 메모리의 참조값(=주소)는 다르지만, <br/>
 메모리에 저장된 값(=value)인 참조값은 같은 ObjClassVar객체를 가리킨다.<br/>
+ * 더불어 위는 이론이고 결과적 현상만 보면 Java는 `Call by Reference`와 같다. `Call by Value`인 증거는 뭐냐??하면<br/>
+   보통 아래 예제처럼 함수에서 매개변수에 새로운 객체를 할당했음에도 함수 외부 객체는 영향을 받지 않음으로 `Call by Value`임을 확인시켜준다.<br/>
+ * Java Reference type 'Call by Value' Example 2
+{% highlight java %}  
+ public static void main(String[] args) {
+      ObjClassVar objClassVal = new ObjClassVar(10);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 10
+      plus10ToObject(objClassVal);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 10
+      
+      // [Comment] Not Changed objClassVal.propertyIntVar as 'Call by Value'
+ }
+ 
+ private static void change20ToObject(ObjClassVar argsObjClassVal) {
+     argsObjClassVal = new ObjClassVar(20);
+ }
+ {% endhighlight %}
+ 
  * 헷갈릴 것 같은 경우 [여기](https://stackoverflow.com/a/12429953) 그림으로 잘 설명해놓은 분이 있어 첨부한다. 
 <br/>
 <br/>
+<br/>
 음 이제 끝날 것 같지만 여기서 또 헷갈리는 녀석이 등장한다.<br/>
-<p>&nbsp;- 자바의 래퍼형 변수(Wrapper Type Variables)는 Class 타입이지만 외부값이 변하지 않는다 왜?</p>
-
-<br/>
-<br/>
-<br/>
-## 프로그래밍 언어별 `Call by ~` 차이
-
-
-
-<br/>
-<br/>
+바로 Wrapper Class이다.<br/>
+### Wrapper class ?
+ : Java의 Primitive type variables를 객체로 사용해야하는 경우를 위해 포장한(=wrapper) 클래스.<br/>
+ * Example
+ int형의 Wrapper class  : `Integer`
+ char형의 Wrapper class : `Character`
+ boolean형의 Wrapper class : `Boolean`
+ 등등이 있다.
 <br/>
 
+<p>&nbsp;- Java의 래퍼형 클래스(Wrapper Class)는 Object로 참조형 변수 타입이지만, 함수 매개변수 전달로 전달하면 외부에 영향을 안준다. <br/>
+   다른 참조형 변수들은 외부에 영향을 줘서 헷갈렸는데 얘는 참조형 변수인데 왜 안주는 것인가?</p>
+ * Java Reference type 'Call by Value' Example 3
+{% highlight java %}  
+ public static void main(String[] args) {
+      Integer refVar = 10;
+      System.out.println("refVar = " + refVar); // 10
+      plus10ToInteger(refVar);
+      System.out.println("refVar = " + refVar); // 10
+      
+      // [Comment] Not Changed refVar as 'Call by Value'
+ }
+ 
+ private static void plus10ToInteger(Integer a) {
+        a+=10;
+ }
+ {% endhighlight %}
+ <br/>
+<p>&nbsp;- 이 경우 plus10ToInteger()에서 unboxing & boxing 과정이 일어나서 그렇다.<br/>
+a+=10; 을 수행할때에는 <br/>
+ⓐ  a값을 unboxing하여 int value를 얻는다.<br/>
+ⓑ  얻은 int값에 10을 더한다.<br/>
+ⓒ  새 Integer Wrapper 객체에 10을 더한 int 값을 boxing한다.<br/>
+ -> 이 과정은 마치 Example2와 같다. </br>
+ 매개변수는 Call by Value로 전달되었으나, 함수 내부에서 새로운 Integer 객체를 참조하도록 값이 변경되었으므로 함수 외부에는 영향을 주지 않는 것이다.
+</p>
+<br/>
+<br/>
+<br/>
 ## Refs
 
 * [Stackoverflow, Are call-by-value and pass-by-value synonymous?](https://stackoverflow.com/a/4987266)
 * [Stackoverflow, Is Java “pass-by-reference” or “pass-by-value”?](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
+* [Stackoverflow, pass array by reference in java] (https://stackoverflow.com/questions/14062118/pass-array-by-reference-in-java)
+* [자바의 아규먼트 전달 방식] (https://brunch.co.kr/@kd4/2)
+* [래퍼 클래스(wrapper class)] (https://jusungpark.tistory.com/17)
+* [[JAVA] Wrapper class 란? 그리고 AutoBoxing] (https://hyeonstorage.tistory.com/168)
+* [C언어 값에 의한 호출 (Call by Value), 참조에 의한 호출 (Call by Reference)] (https://goandroidtips.com/blog/c%EC%96%B8%EC%96%B4-%EA%B0%92%EC%97%90-%EC%9D%98%ED%95%9C-%ED%98%B8%EC%B6%9C-%EC%B0%B8%EC%A1%B0%EC%97%90-%EC%9D%98%ED%95%9C-%ED%98%B8%EC%B6%9C/)
+* [Wrapper classes and call by reference in java [duplicate]] (https://stackoverflow.com/a/20804991)
+* [Call By Reference와 Call By Value] (https://okky.kr/article/303162?note=1005863)
