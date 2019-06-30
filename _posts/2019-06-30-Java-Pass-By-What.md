@@ -24,36 +24,80 @@ C언어 수업에서 Call by value와 Call by reference를 배웠던 것 같다.
 
 ## Pass by Value (= Call by Value)
 함수 호출시 매개변수로 전달한 인자의 메모리에 저장된 값(=value)을 복사해서 함수 내 매개변수로 사용하는 것<br>
-* ☆ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형해도 함수 외부에 영향 無
-* example
+* ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형해도 함수 외부에 영향 無
+* C 'Call by Value' Example
 {% hightlight c %}
+void swap(int a, int b);
+
+int main() {
+
+   int ten = 10;
+   int twenty = 20;
+
+   swap(ten, twenty);
+
+   // [Comment] Not Changed ten and twenty here 
+   printf("ten = %d", ten); // 10
+   printf("twenty = %d", twenty); // 20
+}
+
 void swap(int a, int b) {
  int temp = a;
  a = b;
  b = a;
  // [Comment] Changed a and b here 
 }
-
-int ten = 10;
-int twenty = 20;
-
-swap(ten, twenty);
-
-// [Comment] Not Changed ten and twenty here 
-printf("ten = %d", ten); // 10
-printf("twenty = %d", twenty); // 20
 {% endhighlight }
 <br/>
 <br/>
 
 ## Pass by Reference (= Call by Reference)
 함수 호출시 매개변수로 전달한 인자의 메모리에 저장된 참조값(=주소값)을 복사해서 함수 내 매개변수로 사용하는 것<br>
-* ☆ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형해도 함수 외부에 영향 有
+* ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형해도 함수 외부에 영향 有
 
 <br/>
 <br/>
 
+## 왜 Java는 Pass by Value (= Call by Value)인가?
+<p>&nbsp;- 자바의 기본형(원시형) 변수(Primitive Type Variables)는 함수 매개변수 전달로 전달해도 외부에 영향을 주지 않는다.</p>
+<p>&nbsp;&nbsp;의심할 여지없이 <strong>call by value</strong>이다.</p>
+* Java Primitive type 'Call by Value' Example
+ {% highlight java %}
+ private static void plus10Toint(int a) {
+    a+=10;
+ }
+ 
+ public static void main(String[] args) {
+     int primitVar = 10;
+     System.out.println("primitVar = " + primitVar); // 10
+     plus10Toint(primitVar);
+     System.out.println("primitVar = " + primitVar); // 10
+ }
+ {% endhighlight %}
+<br/>
+<br/>
+이제 헷갈리는 자바의 참조형 변수(Reference Type Variables)를 봐야한다.<br/>
+<p>&nbsp;- 자바의 참조형 변수(Reference Type Variables)는 함수 매개변수 전달로 전달하면 외부에 영향을 준다.</p>
+* Java Reference type 'Call by Value' Example
+ {% highlight java %}
+ 
+ {% endhighlight %}
+<p>&nbsp;&nbsp;하지만 그래도 <strong>call by value</strong>이다. 왜??</p>
 
+
+<br/>
+<br/>
+<p>&nbsp;- 자바의 래퍼형 변수(Wrapper Type Variables)는 Class 타입이지만 외부값이 변하지 않는다 왜?</p>
+<br/>
+<br/>
+<br/>
+## 프로그래밍 언어별 `Call by ~` 차이
+
+
+
+<br/>
+<br/>
+<br/>
 
 ## Refs
 
