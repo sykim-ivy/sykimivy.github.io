@@ -1,0 +1,36 @@
+---
+layout: post
+title: 자바 Call by value? Call by reference? Pass by value? Pass by reference?
+category: Java
+tags: [Java]
+---
+
+# Java는 항상 'Call by Value'
+<br/>
+C언어 수업에서 Call by value와 Call by reference를 배웠던 것 같다.<br>
+이후 다른 수업과 책에서는 따로 언급이 없어서 다른 언어도 위의 개념으로 이해하고 있었는데<br>
+너무 합리적 의심없이 살았다..<br>
+<br/><br/>
+
+## Pass by = Call by
+일단 용어가 너무 많다 생각했는데 동의어예요.<br/>
+함수 호출시 전달되는 매개변수가 value타입인지 reference인지 차이이므로<br/>
+'Call'은 메소드 호출에서, 'Pass'는 메소드 매개변수(들)을 바라본 관점인 것 같습니다.<br/>
+<br/>
+* <strong>`Pass by Value` = `Call by Value`</strong>
+<br/>
+* <strong>`Pass by Reference` = `Call by Reference`</strong>
+<br/>
+<br/>
+## Pass by Value (= Call by Value)
+<br/>
+<br/>
+## Pass by Reference (= Call by Reference)
+
+
+
+
+## Refs
+
+* [Stackoverflow, Are call-by-value and pass-by-value synonymous?](https://stackoverflow.com/a/4987266)
+
