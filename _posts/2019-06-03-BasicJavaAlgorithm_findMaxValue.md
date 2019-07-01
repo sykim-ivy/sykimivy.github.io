@@ -1,7 +1,7 @@
 ---
 layout: post
 title: N개의 값 중 최대값 or 최소값을 구하는 알고리즘 경우의 수
-category: Algorithm-Basic-Github
+category: Algorithm-Basic
 tags: [Algorithm-Basic-Github]
 ---
 <br><br>
