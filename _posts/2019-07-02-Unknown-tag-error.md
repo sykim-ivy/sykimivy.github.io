@@ -24,10 +24,14 @@ The tag `fake_tag` in `index.html` is not a recognized Liquid tag.
 <br/>
 주로 포스팅에 태그 문법이 틀려서 발생하는 듯하다. <br/>
 나의 경우 포스팅 내 소스 코드에 
-~~~
+~~~markdown
 {% endlight %}
 ~~~
-로 써야하는데 마지막 '%'기호를 빼먹어 발생한 문제였다. <br/>
+로 써야하는데 마지막 '%'기호를 빼먹어 
+~~~markdown
+{% endlight }
+~~~
+로 써서발생한 문제였다. <br/>
 <br/>
 저처럼 글이 안 올라간다고 삽질하지 않기를 바랍니다...ㅠㅠ<br/>
 
