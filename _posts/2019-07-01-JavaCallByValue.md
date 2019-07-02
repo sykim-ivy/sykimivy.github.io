@@ -50,3 +50,34 @@ void swap(int a, int b) {
 {% endhighlight %}
 <br/>
 <br/>
+
+## Pass by Reference (= Call by Reference)
+함수 호출시 매개변수로 전달한 인자의 메모리의 참조값(=주소값을) 전달해서 함수 내 매개변수로 사용하는 것</br>
+* ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형하면 전달한 함수 외부 변수에도 영향 有
+* C 'Call by Reference' Example
+{% highlight c %}
+void swap(int *a, int *b);
+
+int main() {
+
+   int ten = 10;
+   int twenty = 20;
+
+   swap(&ten, &twenty);
+
+   // [Comment] Changed ten and twenty here 
+   printf("ten = %d", ten); // 20
+   printf("twenty = %d", twenty); // 10
+}
+
+void swap(int *a, int *b) {
+ int temp = *a;
+ *a = *b;
+ *b = *temp;
+ // [Comment] Changed a and b here 
+}
+
+{% endhighlight %}
+<br/>
+<br/>
+
