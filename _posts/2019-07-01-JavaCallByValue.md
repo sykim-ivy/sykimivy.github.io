@@ -52,7 +52,7 @@ void swap(int a, int b) {
 <br/>
 
 ## Pass by Reference (= Call by Reference)
-함수 호출시 매개변수로 전달한 인자의 메모리의 참조값(=주소값을) 전달해서 함수 내 매개변수로 사용하는 것</br>
+함수 호출시 매개변수로 전달한 인자의 메모리의 참조값(=주소값을) 전달해서 함수 내 매개변수로 사용하는 것<br/>
 * ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형하면 전달한 함수 외부 변수에도 영향 有
 * C 'Call by Reference' Example
 {% highlight c %}
@@ -133,8 +133,8 @@ void swap(int *a, int *b) {
 Java는 앞서 언급한 듯이 **참조형 변수(Reference Type Variables)** 타입의 변수들이 있다.<br/>
 그리고 `참조형 변수는 메모리에 저장된 값(=value)이 참조값(=주소값)`이다.<br/>
 <br/>
-그래서 이 참조형 변수들을 함수 호출시 매개변수로 전달하면 `Call by Value`인 자바는 </br>
-참조형 변수의 메모리에 저장된 값(=value)인 참조값(=주소)를 복사하여 함수 내 매개변수로 준다.</br>
+그래서 이 참조형 변수들을 함수 호출시 매개변수로 전달하면 `Call by Value`인 자바는 <br/>
+참조형 변수의 메모리에 저장된 값(=value)인 참조값(=주소)를 복사하여 함수 내 매개변수로 준다.<br/>
 -> 위 예제에서는 plus10ToObject() 메소드를 호출할때 'objClassVal'의 값(=value)인 참조값(=주소)을 복사하여<br/>
 plus10ToObject() 메소드 내 파라미터 'argsObjClassVal'의 값(=value)으로 전달하였다. **Call by Value**로써!<br/>
 objClassVal와 argsObjClassVal의 변수 자체의 메모리의 참조값(=주소)는 다르지만, <br/>
@@ -195,7 +195,7 @@ a+=10; 을 수행할때에는 <br/>
 ⓐ  a값을 unboxing하여 int value를 얻는다.<br/>
 ⓑ  얻은 int값에 10을 더한다.<br/>
 ⓒ  새 Integer Wrapper 객체에 10을 더한 int 값을 boxing한다.<br/>
- -> 이 과정은 마치 Example2와 같다. </br>
+ -> 이 과정은 마치 Example2와 같다. <br/>
  매개변수는 Call by Value로 전달되었으나, 함수 내부에서 새로운 Integer 객체를 참조하도록 값이 변경되었으므로 함수 외부에는 영향을 주지 않는 것이다.
 </p>
 
