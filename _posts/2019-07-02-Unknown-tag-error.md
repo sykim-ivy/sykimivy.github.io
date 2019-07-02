@@ -7,7 +7,7 @@ tags: [error]
 
 ## Page build failed: Unknown tag error
 <br/>
-{% highlight %}
+{% highlight text %}
 Page build failed: Unknown tag error
 If your GitHub Pages code contains an unrecognized Liquid tag, your GitHub Pages site will not build.
 
