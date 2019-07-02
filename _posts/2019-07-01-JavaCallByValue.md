@@ -208,4 +208,9 @@ a+=10; 을 수행할때에는 <br/>
 * [Stackoverflow, Is Java “pass-by-reference” or “pass-by-value”?](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
 * [Stackoverflow, pass array by reference in java](https://stackoverflow.com/questions/14062118/pass-array-by-reference-in-java)
 * [자바의 아규먼트 전달 방식](https://brunch.co.kr/@kd4/2)
+* [래퍼 클래스(wrapper class)](https://jusungpark.tistory.com/17)
+* [[JAVA] Wrapper class 란? 그리고 AutoBoxing](https://hyeonstorage.tistory.com/168)
+* [C언어 값에 의한 호출 (Call by Value), 참조에 의한 호출 (Call by Reference)](https://goandroidtips.com/blog/c%EC%96%B8%EC%96%B4-%EA%B0%92%EC%97%90-%EC%9D%98%ED%95%9C-%ED%98%B8%EC%B6%9C-%EC%B0%B8%EC%A1%B0%EC%97%90-%EC%9D%98%ED%95%9C-%ED%98%B8%EC%B6%9C/)
+* [Wrapper classes and call by reference in java [duplicate]](https://stackoverflow.com/a/20804991)
+* [Call By Reference와 Call By Value](https://okky.kr/article/303162?note=1005863)
 
