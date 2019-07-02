@@ -25,10 +25,12 @@ The tag `fake_tag` in `index.html` is not a recognized Liquid tag.
 주로 포스팅에 태그 문법이 틀려서 발생하는 듯하다. <br/>
 나의 경우 포스팅 내 소스 코드에 
 ~~~markdown
+{% highlight css %}
 {% endhighlight %}
 ~~~
 로 써야하는데 마지막 '%'기호를 빼먹어 
 ~~~markdown
+{% highlight css %}
 {% endhighlight }
 ~~~
 로 써서발생한 문제였다. <br/>
