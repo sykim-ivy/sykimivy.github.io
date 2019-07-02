@@ -81,3 +81,24 @@ void swap(int *a, int *b) {
 <br/>
 <br/>
 
+## 왜 Java는 Pass by Value (= Call by Value)인가?
+<p>&nbsp;- 자바의 기본형(원시형) 변수(Primitive Type Variables)는 함수 매개변수 전달로 전달해도 외부에 영향을 주지 않는다.</p>
+<p>&nbsp;&nbsp;의심할 여지없이 <strong>call by value</strong>이다.</p>
+* Java Primitive type 'Call by Value' Example
+ {% highlight java %}
+ private static void plus10Toint(int a) {
+    a+=10;
+    // [Comment] Changed a of value here
+ }
+ 
+ public static void main(String[] args) {
+     int primitVar = 10;
+     System.out.println("primitVar = " + primitVar); // 10
+     plus10Toint(primitVar);
+     System.out.println("primitVar = " + primitVar); // 10
+     
+     // [Comment] Not Changed primitVar as 'Call by Value'
+ }
+ {% endhighlight %}
+<br/>
+<br/>
