@@ -1,8 +1,8 @@
 ---
 layout: post
-title: [Error][GitHubPages] Page build failed: Unknown tag error
+title: Page build failed: Unknown tag error
 category: GitHubPages
-tags: [error][GitHubPages]
+tags: [GitHubPages]
 ---
 
 ## Page build failed: Unknown tag error
