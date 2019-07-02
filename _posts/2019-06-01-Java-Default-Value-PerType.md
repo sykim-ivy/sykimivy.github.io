@@ -6,6 +6,8 @@ tags: [Java]
 ---
 
 ## 타입별 자바 초깃값(default value)
+<br/>
+
 |타입|Default value|
 |:---|:---|
 |char | \u0000 |
