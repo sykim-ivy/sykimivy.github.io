@@ -26,7 +26,7 @@ C언어 수업에서 Call by value와 Call by reference를 배웠던 것 같다.
 함수 호출시 매개변수로 전달한 인자의 메모리에 저장된 값(=value)을 복사해서 함수 내 매개변수로 사용하는 것<br>
 * ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형해도 전달한 함수 외부 변수 영향 無
 * C 'Call by Value' Example
-{% hightlight c %}
+{% highlight c %}
 void swap(int a, int b);
 
 int main() {
@@ -55,7 +55,7 @@ void swap(int a, int b) {
 함수 호출시 매개변수로 전달한 인자의 메모리의 참조값(=주소값을) 전달해서 함수 내 매개변수로 사용하는 것</br>
 * ★ 전달된 값을 복사해서 함수 내부에서 사용한 것이므로 값을 변형하면 전달한 함수 외부 변수에도 영향 有
 * C 'Call by Reference' Example
-{% hightlight c %}
+{% highlight c %}
 void swap(int *a, int *b);
 
 int main() {
