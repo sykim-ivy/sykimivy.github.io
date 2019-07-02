@@ -131,5 +131,35 @@ void swap(int *a, int *b) {
  {% endhighlight %}
 <p>&nbsp;&nbsp;하지만 그래도 <strong>call by value</strong>이다. 왜??</p>
 Java는 앞서 언급한 듯이 **참조형 변수(Reference Type Variables)** 타입의 변수들이 있다.<br/>
-그리고 `참조형 변수는 메모리에 저장된 값(=value)이 참조값(=주소값)`이다.<br/><br/>
+그리고 `참조형 변수는 메모리에 저장된 값(=value)이 참조값(=주소값)`이다.<br/>
+<br/>
+그래서 이 참조형 변수들을 함수 호출시 매개변수로 전달하면 `Call by Value`인 자바는 </br>
+참조형 변수의 메모리에 저장된 값(=value)인 참조값(=주소)를 복사하여 함수 내 매개변수로 준다.</br>
+-> 위 예제에서는 plus10ToObject() 메소드를 호출할때 'objClassVal'의 값(=value)인 참조값(=주소)을 복사하여<br/>
+plus10ToObject() 메소드 내 파라미터 'argsObjClassVal'의 값(=value)으로 전달하였다. **Call by Value**로써!<br/>
+objClassVal와 argsObjClassVal의 변수 자체의 메모리의 참조값(=주소)는 다르지만, <br/>
+메모리에 저장된 값(=value)인 참조값은 같은 ObjClassVar객체를 가리킨다.<br/>
+ * 더불어 위는 이론이고 결과적 현상만 보면 Java는 `Call by Reference`와 같다. `Call by Value`인 증거는 뭐냐??하면<br/>
+   보통 아래 예제처럼 함수에서 매개변수에 새로운 객체를 할당했음에도 함수 외부 객체는 영향을 받지 않음으로 `Call by Value`임을 확인시켜준다.<br/>
+ * Java Reference type 'Call by Value' Example 2
+{% highlight java %}
+ public static void main(String[] args) {
+      ObjClassVar objClassVal = new ObjClassVar(10);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 10
+      plus10ToObject(objClassVal);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 10
+      
+      // [Comment] Not Changed objClassVal.propertyIntVar as 'Call by Value'
+ }
+ 
+ private static void change20ToObject(ObjClassVar argsObjClassVal) {
+     argsObjClassVal = new ObjClassVar(20);
+ }
+ {% endhighlight %}
+ 
+ * 헷갈릴 것 같은 경우 [여기](https://stackoverflow.com/a/12429953) 그림으로 잘 설명해놓은 분이 있어 첨부한다. 
+<br/>
+<br/>
+<br/>
+
 
