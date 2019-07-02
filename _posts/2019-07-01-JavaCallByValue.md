@@ -102,3 +102,34 @@ void swap(int *a, int *b) {
  {% endhighlight %}
 <br/>
 <br/>
+
+이제 헷갈리는 자바의 참조형 변수(Reference Type Variables)를 봐야한다.<br/>
+<p>&nbsp;- 자바의 참조형 변수(Reference Type Variables)는 함수 매개변수 전달로 전달하면 외부에 영향을 준다. <br/>
+마치 'Call by Reference'같다?!!;;;;</p>
+* Java Reference type 'Call by Value' Example 1
+ {% highlight java %}
+ static class ObjClassVar {
+     int propertyIntVar;
+     ObjClassVar(int val) {
+         this.propertyIntVar = val;
+         // [Comment] Changed propertyIntVar of value here
+     }
+ }
+ 
+ public static void main(String[] args) {
+      ObjClassVar objClassVal = new ObjClassVar(10);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 10
+      plus10ToObject(objClassVal);
+      System.out.println("propertyIntVar = " + objClassVal.propertyIntVar); // 20
+      
+      // [Comment] Changed objClassVal.propertyIntVar like 'Call by Reference' Why?!!
+ }
+ 
+ private static void plus10ToObject(ObjClassVar argsObjClassVal) {
+     argsObjClassVal.propertyIntVar += 10;
+ }
+ {% endhighlight %}
+<p>&nbsp;&nbsp;하지만 그래도 <strong>call by value</strong>이다. 왜??</p>
+Java는 앞서 언급한 듯이 **참조형 변수(Reference Type Variables)** 타입의 변수들이 있다.<br/>
+그리고 `참조형 변수는 메모리에 저장된 값(=value)이 참조값(=주소값)`이다.<br/><br/>
+
