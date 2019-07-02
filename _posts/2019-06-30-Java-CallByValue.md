@@ -76,6 +76,7 @@ void swap(int *a, int *b) {
  *b = *temp;
  // [Comment] Changed a and b here 
 }
+
 {% endhighlight %}
 <br/>
 <br/>
