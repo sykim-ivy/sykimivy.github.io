@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Java always is Pass By Value
+title: Pass By Value
 category: Java2
 tags: [java2]
 ---
 
-# Java는 항상 Call by Value
+Java는 항상 Call by Value
