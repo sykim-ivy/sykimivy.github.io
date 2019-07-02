@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java always is 'Pass By Value'
+title: Java always is Pass By Value
 category: Java
 tags: [java]
 ---
