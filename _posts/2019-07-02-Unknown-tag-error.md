@@ -24,7 +24,7 @@ The tag `fake_tag` in `index.html` is not a recognized Liquid tag.
 <br/>
 주로 포스팅에 태그 문법이 틀려서 발생하는 듯하다. <br/>
 나의 경우 포스팅 내 소스 코드에 
-~~~markdown
+~~~text
 {% highlight css %}
 {% endhighlight %}
 ~~~
