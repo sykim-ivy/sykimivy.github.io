@@ -32,45 +32,50 @@ a[2]; // IndexOutOfException
 &nbsp;- 1차원이 아닌 2차원 이상의 모든 배열<br/>
 
 * 2차원 배열 Example)
-~~~java
+{% highlight java %}
 int[][] x = new int[2][3]; // 2차원 배열
 int[][][] x1 = new int[2][3][4]; // 3차원 배열
 
 x[1][2] = 3;
-~~~
+{% endhighlight %}
 
 <br/>
 
 * 위 2차원 배열 Example은 아래 코드를 줄인 것이다.
 
-~~~java
+{% highlight java %}
 int[][] x;
 x = new int[2][];
 x[0] = new int[3];
 x[1] = new int[3];
 
 x[1][2] = 3; // 위 줄 '= new int[3]'배열의 2번째 인덱스에 값 3을 대입
-~~~
+{% endhighlight %}
 
 &nbsp;- x[0]과 x[1]은 같은 사이즈가 아니여도 된다.<br/>
 <br/>
 
 * 2차원 배열 선언과 초기화
 
-~~~java
+{% highlight java %}
 int[][] y = { {1, 2, 3}, {4, 5, 6, 7}};
-~~~
+{% endhighlight %}
 
 <br/>
 <br/>
 ## 다차원 배열의 복제
 다차원 배열을 clone()함수로 복제시 최상위 1레벨만 복제가 수행됩니다.<br/>
 * Example
-
-~~~java
+{% highlight java %}
 int[][] y = { {1, 2, 3}, {4, 5, 6, 7}};
 z = y.clone();
-~~~
+{% endhighlight %}
 
 &nbsp;- y[0], y[1]은 복제되어 새로 메모리에 z[0], z[1]이 생성되지만,<br/>
 &nbsp;- y[0], y[1]이 참조값으로 가리키는 배열은 메모리에 새로 생성되는 것이 아니고, </br>y[0], z[0]이 y[1], z[1] 가 같은 배열을 참조하게된다.<br/>
+<br/>
+<br/>
+
+## Refs
+
+* [보요 시바타, Do it! 자료구조와 함께 배우는 알고리즘 입문, 강민,  이지스퍼블리싱(2018)](https://book.naver.com/bookdb/book_detail.nhn?bid=13560672)
