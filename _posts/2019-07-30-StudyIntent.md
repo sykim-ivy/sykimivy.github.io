@@ -1,0 +1,50 @@
+---
+layout: post
+title: Intent Study Record
+category: Android
+tags: [Android]
+---
+
+# Intent
+[Android Delveloper 'Intent' 한글사이트] (https://developer.android.com/guide/components/intents-filters?hl=ko)
+<br/>
+<br/>
+위 사이트 내 <br/>
+3 line의 <strong>'● 액티비티 시작:'</strong> 에서 `startActivity()`가 나오면서 궁금해서 이 함수를 찾아봄<br/>
+Intent의 액티비티 시작 관련은 이 [사이트](https://developer.android.com/training/basics/firstapp/starting-activity?hl=ko)도 
+있으니 참고만 바람 ★나중에<br/>
+<br/>
+
+## startActivity(Intent)
+- 'Context'에 속한 함수로 [레퍼런스] (https://developer.android.com/reference/android/content/Context.html?hl=ko#startActivity(android.content.Intent))
+- 파라미터만 다른 오버로딩 함수 하나 더 있음 <strong>startActivity(Intent, Bundle)</strong>
+- +) 여러개 실행시키는 startActivities()함수도 있으니 ★나중에 확인바람
+
+## startActivity(Intent, Bundle)
+- 이 함수의 [레퍼런스] (https://developer.android.com/reference/android/content/Context.html?hl=ko#startActivity(android.content.Intent,%2520android.os.Bundle))에서
+" Note that if this method is being called from outside of an Activity Context, 
+  then the Intent must include the Intent#FLAG_ACTIVITY_NEW_TASK launch flag. " 라는데 앞 절을 못알아 듣겠어서 FLAG_ACTIVITY_NEW_TASK를 찾아 유추해보기로 함
+- Intent#FLAG_ACTIVITY_NEW_TASK 사용이유 : 기존 액티비티에서 시작하지 않고 새 액티비티를 배치 할 기존 작업이 없기 때문에 별도의 작업을 수행해야하기 때문이라고 한다.
+
+### FLAG_ACTIVITY_NEW_TASK
+- Task에 관한 이해가 선필요하므로 ['작업 및 백 스택' 레퍼런스] (https://developer.android.com/guide/components/tasks-and-back-stack?hl=ko)부터 참조해야할 것 같음 ★나중에
+- [레퍼런스](https://developer.android.com/reference/android/content/Intent.html?hl=ko#FLAG_ACTIVITY_NEW_TASK) ★나중에
+- [찾아본 블로그 설명]이나 <strong>affinity</strong>에 대한 이해 필요함 (http://theeye.pe.kr/archives/1298) ★나중에
+
+<br/>
+오버로딩 함수에서 전달하는 <strong>Bundle</strong>이 궁금해짐<br/>
+<br/>
+### Bundle 
+- : 어떻게 Activity를 시작해야할지에 관한 추가적인 옵션값
+- startActivity(Intent, Bundle)에서 Bundle값으로 null을 줄 경우, no option
+- See [ActivityOptions] (https://developer.android.com/reference/android/app/ActivityOptions.html?hl=ko) for how to build the Bundle supplied here; 
+
+
+#### affinity 
+★나중에
+
+
+
+
+
+
