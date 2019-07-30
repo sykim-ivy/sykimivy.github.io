@@ -40,9 +40,8 @@ Intent의 액티비티 시작 관련은 이 [사이트](https://developer.androi
 - See [ActivityOptions](https://developer.android.com/reference/android/app/ActivityOptions.html?hl=ko) for how to build the Bundle supplied here; ★나중에
 
 
-#### affinity 
+### affinity 
 ★나중에
-
 
 
 
