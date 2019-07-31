@@ -29,12 +29,19 @@ Intent의 액티비티 시작 관련은 이 [사이트](https://developer.androi
 ## startActivityForResult(Intent, int requestCode)
 - 액티비티 실행시 사용되면 부를 수 있는 또 다른 함수, 얘는 새로 보여줄 액티비티가 종료될때 그 결과값을 caller인 액티비티가 수신해야할때 부른다. 
 - [레퍼런스](https://developer.android.com/reference/android/app/Activity.html?hl=ko#startActivityForResult(android.content.Intent,%20int))
+- 새로 보여줄 액티비티에서 결과값 저장시 <strong>public final void setResult (int resultCode, Intent data)</strong>함수를 사용
+### setResult (int resultCode, Intent data)
 - 이 액티비티 관련해서 공부하다가 [<strong>public final void setResult (int resultCode, Intent data)</strong>](https://developer.android.com/reference/android/app/Activity.html?hl=ko#setResult(int))
 레퍼런스 내 하기 부분 어려운데 ★ 나중에 인텐트 플래그 배우고 나서 다시 한 번 봐줘
 {% highlight text %}
 As of Build.VERSION_CODES.GINGERBREAD, the Intent you supply here can have Intent#FLAG_GRANT_READ_URI_PERMISSION and/or Intent#FLAG_GRANT_WRITE_URI_PERMISSION set. This will grant the Activity receiving the result access to the specific URIs in the Intent. Access will remain until the Activity has finished (it will remain across the hosting process being killed and other temporary destruction) and will be added to any existing set of URI permissions it already holds.
 {% endhighlight %}
-
+- resultCode값은 Activity의 Constant값을 쓰는데 `RESULT_CANCELED`, `RESULT_OK`, `RESULT_FIRST_USER`가 있고,
+  <strong>RESULT_FIRST_USER</strong>가 이해가 안가는데 [여기](https://stackoverflow.com/a/49225512)에 설명해놓았지만,
+  사용자 정의값(=custom값)으로써 OS 수준과 앱 수준에서 설정된 상수간에 충돌이 발생하지 않게 `RESULT_FIRST_USER`값에 [offset](http://www.terms.co.kr/offset.htm)을 더해 사용자 정의값을 만들 수 있게 해주는 것으로 이해함;;
+  
+<br/>
+<br/>
 ### FLAG_ACTIVITY_NEW_TASK
 - Task에 관한 이해가 선필요하므로 ['작업 및 백 스택' 레퍼런스](https://developer.android.com/guide/components/tasks-and-back-stack?hl=ko)부터 참조해야할 것 같음 ★나중에
 - [레퍼런스](https://developer.android.com/reference/android/content/Intent.html?hl=ko#FLAG_ACTIVITY_NEW_TASK) ★나중에
