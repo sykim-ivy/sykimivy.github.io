@@ -31,7 +31,7 @@ Intent의 액티비티 시작 관련은 이 [사이트](https://developer.androi
 - [레퍼런스](https://developer.android.com/reference/android/app/Activity.html?hl=ko#startActivityForResult(android.content.Intent,%20int))
 - 이 액티비티 관련해서 공부하다가 [<strong>public final void setResult (int resultCode, Intent data)</strong>](https://developer.android.com/reference/android/app/Activity.html?hl=ko#setResult(int))
 레퍼런스 내 하기 부분 어려운데 ★ 나중에 인텐트 플래그 배우고 나서 다시 한 번 봐줘
-{% highlight %}
+{% highlight text %}
 As of Build.VERSION_CODES.GINGERBREAD, the Intent you supply here can have Intent#FLAG_GRANT_READ_URI_PERMISSION and/or Intent#FLAG_GRANT_WRITE_URI_PERMISSION set. This will grant the Activity receiving the result access to the specific URIs in the Intent. Access will remain until the Activity has finished (it will remain across the hosting process being killed and other temporary destruction) and will be added to any existing set of URI permissions it already holds.
 {% endhighlight %}
 
