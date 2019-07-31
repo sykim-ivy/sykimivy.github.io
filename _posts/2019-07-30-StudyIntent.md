@@ -29,6 +29,8 @@ Intent의 액티비티 시작 관련은 이 [사이트](https://developer.androi
 ## startActivityForResult(Intent, int requestCode)
 - 액티비티 실행시 사용되면 부를 수 있는 또 다른 함수, 얘는 새로 보여줄 액티비티가 종료될때 그 결과값을 caller인 액티비티가 수신해야할때 부른다. 
 - [레퍼런스](https://developer.android.com/reference/android/app/Activity.html?hl=ko#startActivityForResult(android.content.Intent,%20int))
+- [이 함수의 동작과정 이론적 설명 블로그1](https://developljy.tistory.com/16)
+- [이 함수의 동작과정 예제 및 기술적 설명 블로그1](https://liveonthekeyboard.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-startActivityForResult-onActivityResult-%EC%82%AC%EC%9A%A9%EB%B2%95)
 - 새로 보여줄 액티비티에서 결과값 저장시 <strong>public final void setResult (int resultCode, Intent data)</strong>함수를 사용
 ### setResult (int resultCode, Intent data)
 - 이 액티비티 관련해서 공부하다가 [<strong>public final void setResult (int resultCode, Intent data)</strong>](https://developer.android.com/reference/android/app/Activity.html?hl=ko#setResult(int))
