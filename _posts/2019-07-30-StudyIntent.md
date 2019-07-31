@@ -26,6 +26,15 @@ Intent의 액티비티 시작 관련은 이 [사이트](https://developer.androi
   then the Intent must include the Intent#FLAG_ACTIVITY_NEW_TASK launch flag. " 라는데 앞 절을 못알아 듣겠어서 FLAG_ACTIVITY_NEW_TASK를 찾아 유추해보기로 함
 - Intent#FLAG_ACTIVITY_NEW_TASK 사용이유 : 기존 액티비티에서 시작하지 않고 새 액티비티를 배치 할 기존 작업이 없기 때문에 별도의 작업을 수행해야하기 때문이라고 한다.
 
+## startActivityForResult(Intent, int requestCode)
+- 액티비티 실행시 사용되면 부를 수 있는 또 다른 함수, 얘는 새로 보여줄 액티비티가 종료될때 그 결과값을 caller인 액티비티가 수신해야할때 부른다. 
+- [레퍼런스](https://developer.android.com/reference/android/app/Activity.html?hl=ko#startActivityForResult(android.content.Intent,%20int))
+- 이 액티비티 관련해서 공부하다가 [<strong>public final void setResult (int resultCode, Intent data)</strong>](https://developer.android.com/reference/android/app/Activity.html?hl=ko#setResult(int))
+레퍼런스 내 하기 부분 어려운데 ★ 나중에 인텐트 플래그 배우고 나서 다시 한 번 봐줘
+{% highlight %}
+As of Build.VERSION_CODES.GINGERBREAD, the Intent you supply here can have Intent#FLAG_GRANT_READ_URI_PERMISSION and/or Intent#FLAG_GRANT_WRITE_URI_PERMISSION set. This will grant the Activity receiving the result access to the specific URIs in the Intent. Access will remain until the Activity has finished (it will remain across the hosting process being killed and other temporary destruction) and will be added to any existing set of URI permissions it already holds.
+{% endhighlight %}
+
 ### FLAG_ACTIVITY_NEW_TASK
 - Task에 관한 이해가 선필요하므로 ['작업 및 백 스택' 레퍼런스](https://developer.android.com/guide/components/tasks-and-back-stack?hl=ko)부터 참조해야할 것 같음 ★나중에
 - [레퍼런스](https://developer.android.com/reference/android/content/Intent.html?hl=ko#FLAG_ACTIVITY_NEW_TASK) ★나중에
