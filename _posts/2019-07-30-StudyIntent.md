@@ -73,6 +73,18 @@ and will be added to any existing set of URI permissions it already holds."<br/>
 ★나중에
 
 
+★나중에 다른 컴포넌트 공부할때 같이 봐줘야할 것들 -------------------------------------------
+## Service
+public boolean bindService (Intent service, 
+                int flags, 
+                Executor executor, 
+                ServiceConnection conn) 함수에서 <strong>Executor</strong>에 관하여<br/>
+[레퍼런스](https://developer.android.com/reference/android/content/Context.html?hl=ko#bindService(android.content.Intent,%20android.content.ServiceConnection,%20int))
+                
+## BroadcastReceiver
+- sendOrderedBroadcast() 동작에 관해 더 자세히 [레퍼런스](https://developer.android.com/reference/android/content/Context.html?hl=ko#sendOrderedBroadcast(android.content.Intent,%2520java.lang.String,%2520android.content.BroadcastReceiver,%2520android.os.Handler,%2520int,%2520java.lang.String,%2520android.os.Bundle))
+- [설명 블로그](https://abydos.tistory.com/26)
+
 
 
 
