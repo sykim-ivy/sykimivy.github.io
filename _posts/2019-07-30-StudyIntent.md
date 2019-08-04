@@ -99,8 +99,22 @@ public boolean bindService (Intent service,
 
 ## Intent Filter
 - [잘 설명해 놓은 블로그](https://www.charlezz.com/?p=859)
+- [인텐트 필터와 그 하위 요소](https://www.charlezz.com/?p=859)
 
+### URI
+- [URI, URL, URN 설명](https://mygumi.tistory.com/139)
+- [URI, URL, URN, IRI 설명](https://blog.naver.com/PostView.nhn?blogId=itperson&logNo=220838401501&categoryNo=50&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search)
+- [URI이지만 URL과 URN이 아닌 예](http://sunychoi.github.io/java/2015/04/27/uri-url.html)
 
+## Intent Extra
+- [intent.putExtra("data", data) vs intent.putExtras(bundle);](https://youngest-programming.tistory.com/50)
+- [무엇이 더 빠릅니까? 하나의 intent.putExtras (문자열로 묶음) 또는 많은 intent.putExtra (문자열)?](https://stackoverflow.com/questions/17991288/what-is-faster-one-intent-putextrasbundle-with-strings-or-many-intent-putextr?noredirect=1&lq=1)
 
+## Intent 전달되는 Uri 사용예시
+- [Content 의 Uri 로부터 FilePath 가져오기 ](https://crystalcube.co.kr/184)
+- [intent 와 Uri 를 이용해 인터넷 브라우저와 전화 앱 접근하기](https://appcafe.tistory.com/29)
 
+## Intent 상수(Constants)값들 보기!!
+- [Activity 생성시에 사용되는 Intent Flag 정리](http://theeye.pe.kr/archives/1298)
+- [Intent 상수(Constants)값들](https://kairo96.gitbooks.io/android/content/ch2.8.html)
 
