@@ -133,3 +133,13 @@ public boolean bindService (Intent service,
 - `암시적 인텐트`를 수신받을 (서비스 아닌) 앱 구성요소가 반드시 Intent filter에 가지고 있어야하는 category값
 - "android.intent.category.DEFAULT"
 - [쉬운 설명](https://stackoverflow.com/a/21257097)
+
+## PendingIntent
+- [쉬운 설명](https://huewu.blog.me/110084228131)
+- [Intent를 직접 보내지 않고 다른 클래스에게 Intent를 위임해주기 위한 클래스 정도](http://mar7r.blogspot.com/2013/07/pendingintent.html)
+- [깔끔한 간략 설명 및 이미지](https://www.charlezz.com/?p=861)
+- [상세한 설명 및 사용예](https://techlog.gurucat.net/80)
+- [PendingIntent flags값 몇몇개](https://huewu.blog.me/110084228131)
+- [안드로이드 PendingIntent Flag 의미](https://lucas-look.tistory.com/39)
+- [whats-requestcode-used-for-on-pendingintent?](https://stackoverflow.com/questions/21526319/whats-requestcode-used-for-on-pendingintent)
+- 
