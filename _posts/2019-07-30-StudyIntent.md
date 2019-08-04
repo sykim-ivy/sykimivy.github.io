@@ -118,3 +118,18 @@ public boolean bindService (Intent service,
 - [Activity 생성시에 사용되는 Intent Flag 정리](http://theeye.pe.kr/archives/1298)
 - [Intent 상수(Constants)값들](https://kairo96.gitbooks.io/android/content/ch2.8.html)
 
+
+## resolveActivity()함수 호출 필요여부
+- [resolveActivity() 레퍼런스](https://developer.android.com/reference/android/content/Intent.html?hl=ko#resolveActivity(android.content.pm.PackageManager))에서는 <br/>
+  "This API is called for you as part of starting an activity from an intent. You do not normally need to call it yourself."라고
+  부를 필요없다고 하는데,
+- [암시적 Intent 설명](https://developer.android.com/guide/components/intents-filters?hl=ko#ExampleSend)의 주의사항에서는 확인하라고 하는거지??
+
+- +) 더불어, [resolveActivity() 레퍼런스](https://developer.android.com/reference/android/content/Intent.html?hl=ko#resolveActivity(android.content.pm.PackageManager)) 영어도 해석바람
+- +) "This method is implemented simply by calling PackageManager#resolveActivity with the "defaultOnly" parameter true."에서<br/>
+   `PackageManager#resolveActivity` 함수도 정의 부분 봐야함!
+   
+## Intent.CATEGORY_DEFAULT
+- `암시적 인텐트`를 수신받을 (서비스 아닌) 앱 구성요소가 반드시 Intent filter에 가지고 있어야하는 category값
+- "android.intent.category.DEFAULT"
+- [쉬운 설명](https://stackoverflow.com/a/21257097)
