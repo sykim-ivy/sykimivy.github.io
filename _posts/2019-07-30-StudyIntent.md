@@ -86,5 +86,21 @@ public boolean bindService (Intent service,
 - [설명 블로그](https://abydos.tistory.com/26)
 
 
+### MIME 타입
+- [정의](https://dololak.tistory.com/130)
+
+
+### 명시적 암시적 인텐트 설명
+- [참조한 블로그 설명](https://limkydev.tistory.com/35)
+
+### broadcast 설명
+- [BoadcastReceiver는 메인스레드에서 실행, 10초 내 return되지 않으면 system이 receiver를 죽이거나 ANR 발생시킴](https://sunflaur.tistory.com/260)
+- [sendOrderedBroadcast() 설명 블로그](https://abydos.tistory.com/26)
+
+## Intent Filter
+- [잘 설명해 놓은 블로그](https://www.charlezz.com/?p=859)
+
+
+
 
 
